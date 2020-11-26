@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/aspect_ratio.json",
+  "type": "object",
+  "title": "AspectRatioBuilder",
+  "additionalProperties": false,
+  "required": [
+    "aspectRatio"
+  ],
+  "properties": {
+    "aspectRatio": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

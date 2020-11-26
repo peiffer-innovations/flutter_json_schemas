@@ -1,0 +1,166 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/gesture_detector.json",
+  "type": "object",
+  "title": "GestureDetectorBuilder",
+  "additionalProperties": false,
+  "properties": {
+    "behavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/hit_test_behavior.json"
+    },
+    "dragStartBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json"
+    },
+    "excludeFromSemantics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "onDoubleTap": {
+      "type": "string"
+    },
+    "onDoubleTapCancel": {
+      "type": "string"
+    },
+    "onDoubleTapDown": {
+      "type": "string"
+    },
+    "onForcePressEnd": {
+      "type": "string"
+    },
+    "onForcePressPeak": {
+      "type": "string"
+    },
+    "onForcePressStart": {
+      "type": "string"
+    },
+    "onForcePressUpdate": {
+      "type": "string"
+    },
+    "onHorizontalDragCancel": {
+      "type": "string"
+    },
+    "onHorizontalDragDown": {
+      "type": "string"
+    },
+    "onHorizontalDragEnd": {
+      "type": "string"
+    },
+    "onHorizontalDragStart": {
+      "type": "string"
+    },
+    "onHorizontalDragUpdate": {
+      "type": "string"
+    },
+    "onLongPress": {
+      "type": "string"
+    },
+    "onLongPressEnd": {
+      "type": "string"
+    },
+    "onLongPressMoveUpdate": {
+      "type": "string"
+    },
+    "onLongPressStart": {
+      "type": "string"
+    },
+    "onLongPressUp": {
+      "type": "string"
+    },
+    "onPanCancel": {
+      "type": "string"
+    },
+    "onPanDown": {
+      "type": "string"
+    },
+    "onPanEnd": {
+      "type": "string"
+    },
+    "onPanStart": {
+      "type": "string"
+    },
+    "onPanUpdate": {
+      "type": "string"
+    },
+    "onScaleEnd": {
+      "type": "string"
+    },
+    "onScaleStart": {
+      "type": "string"
+    },
+    "onScaleUpdate": {
+      "type": "string"
+    },
+    "onSecondaryLongPress": {
+      "type": "string"
+    },
+    "onSecondaryLongPressEnd": {
+      "type": "string"
+    },
+    "onSecondaryLongPressMoveUpdate": {
+      "type": "string"
+    },
+    "onSecondaryLongPressStart": {
+      "type": "string"
+    },
+    "onSecondaryLongPressUp": {
+      "type": "string"
+    },
+    "onSecondaryTap": {
+      "type": "string"
+    },
+    "onSecondaryTapCancel": {
+      "type": "string"
+    },
+    "onSecondaryTapDown": {
+      "type": "string"
+    },
+    "onSecondaryTapUp": {
+      "type": "string"
+    },
+    "onTap": {
+      "type": "string"
+    },
+    "onTapCancel": {
+      "type": "string"
+    },
+    "onTapDown": {
+      "type": "string"
+    },
+    "onTapUp": {
+      "type": "string"
+    },
+    "onTertiaryTapCancel": {
+      "type": "string"
+    },
+    "onTertiaryTapDown": {
+      "type": "string"
+    },
+    "onTertiaryTapUp": {
+      "type": "string"
+    },
+    "onVerticalDragCancel": {
+      "type": "string"
+    },
+    "onVerticalDragDown": {
+      "type": "string"
+    },
+    "onVerticalDragEnd": {
+      "type": "string"
+    },
+    "onVerticalDragStart": {
+      "type": "string"
+    },
+    "onVerticalDragUpdate": {
+      "type": "string"
+    }
+  }
+}

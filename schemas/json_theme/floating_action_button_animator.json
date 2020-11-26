@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/floating_action_button_animator.json",
+  "type": "string",
+  "title": "FloatingActionButtonAnimator",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "scaling"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/slider_track_shape.json",
+  "title": "SliderTrackShapeSchema",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "disabledThumbGapWidth": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "rectangular",
+        "rounded"
+      ]
+    }
+  }
+}

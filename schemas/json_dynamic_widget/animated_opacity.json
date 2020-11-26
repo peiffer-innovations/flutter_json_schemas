@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/animated_opacity.json",
+  "type": "object",
+  "title": "AnimatedOpacityBuilder",
+  "additionalProperties": false,
+  "required": [
+    "duration",
+    "opacity"
+  ],
+  "properties": {
+    "alwaysIncludeSemantics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "curve": {
+      "type": "string"
+    },
+    "duration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "onEnd": {
+      "type": "string"
+    },
+    "opacity": {
+      "type": "string"
+    }
+  }
+}

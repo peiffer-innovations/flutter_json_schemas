@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/decorated_box.json",
+  "title": "DecoratedBoxBuilder",
+  "additionalProperties": false,
+  "required": [
+    "decoration"
+  ],
+  "properties": {
+    "decoration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_decoration.json"
+        }
+      ]
+    },
+    "position": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/decoration_position.json"
+    }
+  }
+}
