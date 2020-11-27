@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json",
+  "$comment": "https://api.flutter.dev/flutter/material/InteractiveInkFeatureFactory-class.html",
   "type": "string",
   "title": "InteractiveInkFeatureFactory",
   "oneOf": [

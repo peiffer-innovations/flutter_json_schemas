@@ -1,7 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/slider_theme_data.json",
-  "title": "SliderThemeDataThemeData",
+  "$comment": "https://api.flutter.dev/flutter/material/SliderThemeData-class.html",
+  "title": "SliderThemeData",
   "type": "object",
   "required": [],
   "properties": {

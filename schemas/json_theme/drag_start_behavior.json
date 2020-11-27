@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json",
+  "$comment": "https://api.flutter.dev/flutter/gestures/DragStartBehavior-class.html",
   "type": "string",
   "title": "DragStartBehavior",
   "oneOf": [

@@ -1,7 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/input_decoration_theme.json",
-  "title": "IconThemeData",
+  "$comment": "https://api.flutter.dev/flutter/material/InputDecorationTheme-class.html",
+  "title": "InputDecorationTheme",
   "type": "object",
   "properties": {
     "alignLabelWithHint": {

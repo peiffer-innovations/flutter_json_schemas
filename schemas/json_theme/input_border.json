@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/input_border.json",
+  "$comment": "https://api.flutter.dev/flutter/material/InputBorder-class.html",
   "title": "InputBorder",
   "type": "object",
   "required": [

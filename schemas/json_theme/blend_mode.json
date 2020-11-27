@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blend_mode.json",
+  "$comment": "https://api.flutter.dev/flutter/dart-ui/BlendMode-class.html",
   "type": "string",
   "title": "BlendMode",
   "oneOf": [

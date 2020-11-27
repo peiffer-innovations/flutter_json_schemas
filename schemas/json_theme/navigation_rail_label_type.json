@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_rail_label_type.json",
+  "$comment": "https://api.flutter.dev/flutter/material/NavigationRailLabelType-class.html",
   "title": "NavigationRailLabelType",
   "type": "string",
   "oneOf": [

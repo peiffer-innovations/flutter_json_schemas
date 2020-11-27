@@ -1,0 +1,99 @@
+# TileMode enum Null safety #
+
+Defines what happens at the edge of the gradient.
+
+A gradient is defined along a finite inner area. In the case of a linear gradient, it's between the parallel lines that are orthogonal to the line drawn between two points. In the case of radial gradients, it's the disc that covers the circle centered on a particular point up to a given radius.
+
+This enum is used to define how the gradient should paint the regions outside that defined inner area.
+
+See also:
+
+ *  painting.Gradient, the superclass for LinearGradient and RadialGradient, as used by BoxDecoration et al, which works in relative coordinates and can create a Shader representing the gradient for a particular Rect on demand.
+ *  dart:ui.Gradient, the low-level class used when dealing with the Paint.shader property directly, with its Gradient.linear and Gradient.radial constructors.
+
+## Constants ##
+
+clamp → const TileMode
+
+Edge is clamped to the final color.
+
+The gradient will paint the all the regions outside the inner area with the color of the point closest to that region.
+
+![tile_mode_clamp_radial.png][]
+
+`const TileMode(0)`
+
+mirror → const TileMode
+
+Edge is mirrored from last color to first.
+
+This is as if the stop points from 0.0 to 1.0 were then repeated backwards from 2.0 to 1.0, then forwards from 2.0 to 3.0, then backwards again from 4.0 to 3.0, and so forth (and for linear gradients, similarly from in the negative direction).
+
+![tile_mode_mirror_linear.png][] ![tile_mode_mirror_radial.png][]
+
+`const TileMode(2)`
+
+repeated → const TileMode
+
+Edge is repeated from first color to last.
+
+This is as if the stop points from 0.0 to 1.0 were then repeated from 1.0 to 2.0, 2.0 to 3.0, and so forth (and for linear gradients, similarly from -1.0 to 0.0, -2.0 to -1.0, etc).
+
+![tile_mode_repeated_linear.png][] ![tile_mode_repeated_radial.png][]
+
+`const TileMode(1)`
+
+values → const List<TileMode>
+
+A constant List of the values in this enum, in order of their declaration.
+
+`const List<TileMode>`
+
+## Properties ##
+
+hashCode → int
+
+The hash code for this object. \[...\]
+
+read-only, inherited
+
+index → int
+
+The integer index of this enum.
+
+final
+
+runtimeType → Type
+
+A representation of the runtime type of the object.
+
+read-only, inherited
+
+## Methods ##
+
+noSuchMethod(Invocation invocation) → dynamic
+
+Invoked when a non-existent method or property is accessed. \[...\]
+
+inherited
+
+toString() → String
+
+Returns a string representation of this object.
+
+override
+
+## Operators ##
+
+operator ==(Object other) → bool
+
+The equality operator. \[...\]
+
+inherited
+
+
+[tile_mode_clamp_radial.png]: https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_clamp_radial.png
+[tile_mode_mirror_linear.png]: https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_mirror_linear.png
+[tile_mode_mirror_radial.png]: https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_mirror_radial.png
+[tile_mode_repeated_linear.png]: https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_repeated_linear.png
+[tile_mode_repeated_radial.png]: https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_repeated_radial.png
