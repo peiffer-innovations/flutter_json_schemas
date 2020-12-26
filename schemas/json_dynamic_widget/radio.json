@@ -105,6 +105,9 @@
     "hoverColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "id": {
+      "type": "string"
+    },
     "label": {
       "type": "string"
     },

@@ -32,19 +32,6 @@
         }
       ]
     },
-    "isMaterialAppTheme": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
     "onEnd": {
       "type": "string"
     }
