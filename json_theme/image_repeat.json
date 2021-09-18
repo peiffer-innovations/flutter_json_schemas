@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/image_repeat.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/ImageRepeat-class.html",
+  "type": "string",
+  "title": "ImageRepeat",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "noRepeat",
+        "repeat",
+        "repeatX",
+        "repeatY"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

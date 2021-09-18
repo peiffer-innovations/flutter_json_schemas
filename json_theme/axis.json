@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/axis.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/Axis-class.html",
+  "type": "string",
+  "title": "Axis",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "horizontal",
+        "vertical"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

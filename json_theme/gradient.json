@@ -1,0 +1,199 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/gradient.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/Gradient-class.html",
+  "title": "Gradient",
+  "type": "object",
+  "oneOf": [
+    {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "begin": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+          }
+        },
+        "end": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        },
+        "stops": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          }
+        },
+        "tileMode": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tile_mode.json"
+        },
+        "transform": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/gradient_transform.json"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "linear"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "center": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+          }
+        },
+        "focal": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        },
+        "focalRadius": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "radius": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "stops": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          }
+        },
+        "tileMode": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tile_mode.json"
+        },
+        "transform": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/gradient_transform.json"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "radial"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "center": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        },
+        "colors": {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+          }
+        },
+        "endAngle": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "startAngle": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "stops": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          }
+        },
+        "tileMode": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tile_mode.json"
+        },
+        "transform": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/gradient_transform.json"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "sweep"
+          ]
+        }
+      }
+    }
+  ]
+}

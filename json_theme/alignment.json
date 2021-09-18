@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/Alignment-class.html",
+  "title": "Alignment",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "bottomCenter",
+        "bottomLeft",
+        "bottomRight",
+        "center",
+        "centerLeft",
+        "centerRight",
+        "topCenter",
+        "topLeft",
+        "topRight"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

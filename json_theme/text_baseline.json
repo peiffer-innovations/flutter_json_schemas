@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_baseline.json",
+  "$comment": "https://api.flutter.dev/flutter/dart-ui/TextBaseline-class.html",
+  "title": "TextBaseline",
+  "type": "string",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "alphabetic",
+        "ideographic"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}
