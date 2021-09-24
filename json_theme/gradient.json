@@ -11,7 +11,14 @@
       ],
       "properties": {
         "begin": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+            }
+          ]
         },
         "colors": {
           "type": "array",
@@ -20,7 +27,14 @@
           }
         },
         "end": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+            }
+          ]
         },
         "stops": {
           "type": "array",
@@ -62,7 +76,14 @@
       ],
       "properties": {
         "center": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+            }
+          ]
         },
         "colors": {
           "type": "array",
@@ -71,7 +92,14 @@
           }
         },
         "focal": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+            }
+          ]
         },
         "focalRadius": {
           "anyOf": [
@@ -133,7 +161,14 @@
       ],
       "properties": {
         "center": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+            }
+          ]
         },
         "colors": {
           "type": "array",

@@ -5,26 +5,36 @@
   "title": "Alignment",
   "oneOf": [
     {
-      "type": "string",
-      "enum": [
-        "bottomCenter",
-        "bottomLeft",
-        "bottomRight",
-        "center",
-        "centerLeft",
-        "centerRight",
-        "topCenter",
-        "topLeft",
-        "topRight"
-      ]
+      "type": "string"
     },
     {
-      "type": "string",
-      "pattern": "^\\{\\{.*\\}\\}$"
-    },
-    {
-      "type": "string",
-      "pattern": "##.*##$"
+      "type": "object",
+      "required": [
+        "x",
+        "y"
+      ],
+      "properties": {
+        "x": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "y": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        }
+      }
     }
   ]
 }
