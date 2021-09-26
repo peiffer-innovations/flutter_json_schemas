@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/animated_cross_fade.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html",
+  "type": "object",
+  "title": "AnimatedCrossFade",
+  "additionalProperties": false,
+  "required": [
+    "crossFadeState",
+    "duration"
+  ],
+  "properties": {
+    "alignment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        }
+      ]
+    },
+    "crossFadeState": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/cross_fade_state.json"
+    },
+    "duration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "firstCurve": {
+      "type": "string"
+    },
+    "layoutBuilder": {
+      "type": "string"
+    },
+    "reverseDuration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "secondCurve": {
+      "type": "string"
+    },
+    "sizeCurve": {
+      "type": "string"
+    }
+  }
+}

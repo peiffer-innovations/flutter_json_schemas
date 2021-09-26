@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/indexed_stack.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/IndexedStack-class.html",
+  "title": "IndexedStack",
+  "oneOf": [
+    {
+      "type": "null"
+    },
+    {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "alignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+            }
+          ]
+        },
+        "index": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "sizing": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/stack_fit.json"
+        },
+        "textDirection": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
+        }
+      }
+    }
+  ]
+}

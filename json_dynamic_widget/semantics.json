@@ -1,0 +1,455 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/semantics.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/Semantics-class.html",
+  "type": "object",
+  "title": "Semantics",
+  "additionalProperties": false,
+  "properties": {
+    "attributedDecreasedValue": {
+      "type": "string"
+    },
+    "attributedHint": {
+      "type": "string"
+    },
+    "attributedIncreasedValue": {
+      "type": "string"
+    },
+    "attributedLabel": {
+      "type": "string"
+    },
+    "attributedValue": {
+      "type": "string"
+    },
+    "button": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "customSemanticsActions": {
+      "type": "string"
+    },
+    "checked": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "container": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "currentValueLength": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "decreasedValue": {
+      "type": "string"
+    },
+    "enabled": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "excludeSemantics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "explicitChildNodes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "focusable": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "focused": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "header": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "hidden": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "hint": {
+      "type": "string"
+    },
+    "image": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "inMutuallyExclusiveGroup": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "increasedValue": {
+      "type": "string"
+    },
+    "keyboardKey": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "liveRegion": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "maxValueLength": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "multiline": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "namesRoute": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "obscured": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "onCopy": {
+      "type": "string"
+    },
+    "onCut": {
+      "type": "string"
+    },
+    "onDecrease": {
+      "type": "string"
+    },
+    "onDidGainAccessibilityFocus": {
+      "type": "string"
+    },
+    "onDidLoseAccessibilityFocus": {
+      "type": "string"
+    },
+    "onDismiss": {
+      "type": "string"
+    },
+    "onIncrease": {
+      "type": "string"
+    },
+    "onLongPress": {
+      "type": "string"
+    },
+    "onLongPressHint": {
+      "type": "string"
+    },
+    "onMoveCursorBackwardByCharacter": {
+      "type": "string"
+    },
+    "onMoveCursorForwardByCharacter": {
+      "type": "string"
+    },
+    "onPaste": {
+      "type": "string"
+    },
+    "onScrollDown": {
+      "type": "string"
+    },
+    "onScrollLeft": {
+      "type": "string"
+    },
+    "onScrollRight": {
+      "type": "string"
+    },
+    "onScrollUp": {
+      "type": "string"
+    },
+    "onSetSelection": {
+      "type": "string"
+    },
+    "onTap": {
+      "type": "string"
+    },
+    "onTapHint": {
+      "type": "string"
+    },
+    "readOnly": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "scopesRoute": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "selected": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "slider": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "sortKey": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/ordinal_sort_key.json"
+        }
+      ]
+    },
+    "tagForChildren": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/semantics_tag_schema.json"
+        }
+      ]
+    },
+    "textDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
+    },
+    "textField": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "toggled": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}
