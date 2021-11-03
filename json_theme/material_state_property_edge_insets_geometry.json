@@ -3,87 +3,105 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_edge_insets_geometry.json",
   "$comment": "https://api.flutter.dev/flutter/material/MaterialStateProperty-class.html",
   "title": "MaterialStatePropertyEdgeInsetsGeometrySchema",
-  "type": "object",
-  "properties": {
-    "disabled": {
-      "anyOf": [
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "number"
+    },
+    {
+      "type": "array",
+      "array": [
         {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+          "type": "number"
         }
       ]
     },
-    "dragged": {
-      "anyOf": [
-        {
-          "type": "string"
+    {
+      "type": "object",
+      "properties": {
+        "disabled": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "empty": {
-      "anyOf": [
-        {
-          "type": "string"
+        "dragged": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "error": {
-      "anyOf": [
-        {
-          "type": "string"
+        "empty": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "focused": {
-      "anyOf": [
-        {
-          "type": "string"
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "hovered": {
-      "anyOf": [
-        {
-          "type": "string"
+        "focused": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "pressed": {
-      "anyOf": [
-        {
-          "type": "string"
+        "hovered": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "selected": {
-      "anyOf": [
-        {
-          "type": "string"
+        "pressed": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+        "selected": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+            }
+          ]
         }
-      ]
+      }
     }
-  }
+  ]
 }
