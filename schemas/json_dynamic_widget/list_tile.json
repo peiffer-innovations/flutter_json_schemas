@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/list_tile.json",
   "$comment": "https://api.flutter.dev/flutter/material/ListTile-class.html",
   "type": "object",
-  "title": "ListTileBuilder",
+  "title": "ListTile",
   "additionalProperties": false,
   "properties": {
     "autofocus": {
@@ -42,6 +42,19 @@
         }
       ]
     },
+    "enableFeedback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "enabled": {
       "anyOf": [
         {
@@ -60,6 +73,16 @@
     },
     "focusNode": {
       "type": "string"
+    },
+    "horizontalTitleGap": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
     },
     "hoverColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -84,6 +107,26 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
+    },
+    "minLeadingWidth": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "minVerticalPadding": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
         }
       ]
     },

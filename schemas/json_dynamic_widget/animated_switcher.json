@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/animated_switcher.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html",
   "type": "object",
-  "title": "AnimatedSwitcherBuilder",
+  "title": "AnimatedSwitcher",
   "additionalProperties": false,
   "required": [
     "child",

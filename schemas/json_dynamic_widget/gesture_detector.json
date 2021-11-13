@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/gesture_detector.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/GestureDetector-class.html",
   "type": "object",
-  "title": "GestureDetectorBuilder",
+  "title": "GestureDetector",
   "additionalProperties": false,
   "properties": {
     "behavior": {
@@ -64,6 +64,12 @@
     "onLongPress": {
       "type": "string"
     },
+    "onLongPressCancel": {
+      "type": "string"
+    },
+    "onLongPressDown": {
+      "type": "string"
+    },
     "onLongPressEnd": {
       "type": "string"
     },
@@ -103,6 +109,12 @@
     "onSecondaryLongPress": {
       "type": "string"
     },
+    "onSecondaryLongPressCancel": {
+      "type": "string"
+    },
+    "onSecondaryLongPressDown": {
+      "type": "string"
+    },
     "onSecondaryLongPressEnd": {
       "type": "string"
     },
@@ -137,6 +149,27 @@
       "type": "string"
     },
     "onTapUp": {
+      "type": "string"
+    },
+    "onTertiaryLongPress": {
+      "type": "string"
+    },
+    "onTertiaryLongPressCancel": {
+      "type": "string"
+    },
+    "onTertiaryLongPressDown": {
+      "type": "string"
+    },
+    "onTertiaryLongPressEnd": {
+      "type": "string"
+    },
+    "onTertiaryLongPressMoveUpdate": {
+      "type": "string"
+    },
+    "onTertiaryLongPressStart": {
+      "type": "string"
+    },
+    "onTertiaryLongPressUp": {
       "type": "string"
     },
     "onTertiaryTapCancel": {

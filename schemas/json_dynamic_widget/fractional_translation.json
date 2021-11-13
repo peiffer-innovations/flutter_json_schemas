@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/fractional_translation.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/FractionalTranslation-class.html",
   "type": "object",
-  "title": "FractionalTranslationBuilder",
+  "title": "FractionalTranslation",
   "additionalProperties": false,
   "required": [
     "translation"

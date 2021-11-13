@@ -3,10 +3,13 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/circular_progress_indicator.json",
   "$comment": "https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html",
   "type": "object",
-  "title": "CircularProgressIndicatorBuilder",
+  "title": "CircularProgressIndicator",
   "additionalProperties": false,
   "properties": {
     "backgroundColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "semanticsLabel": {

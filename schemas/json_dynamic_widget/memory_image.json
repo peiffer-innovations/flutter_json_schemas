@@ -3,14 +3,21 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/memory_image.json",
   "$comment": "https://api.flutter.dev/flutter/painting/MemoryImage-class.html",
   "type": "object",
-  "title": "MemoryImageBuilder",
+  "title": "MemoryImage",
   "additionalProperties": false,
   "required": [
     "image"
   ],
   "properties": {
     "alignment": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        }
+      ]
     },
     "cacheHeight": {
       "anyOf": [
@@ -161,6 +168,16 @@
         },
         {
           "type": "boolean"
+        }
+      ]
+    },
+    "opacity": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
         }
       ]
     },

@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/checkbox.json",
   "$comment": "https://api.flutter.dev/flutter/material/Checkbox-class.html",
   "type": "object",
-  "title": "CheckboxBuilder",
+  "title": "Checkbox",
   "additionalProperties": false,
   "properties": {
     "activeColor": {
@@ -54,6 +54,9 @@
         }
       ]
     },
+    "fillColor": {
+      "type": "string"
+    },
     "focusColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -84,6 +87,39 @@
     },
     "onSaved": {
       "type": "string"
+    },
+    "overlayColor": {
+      "type": "string"
+    },
+    "shape": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/outlined_button.json"
+        }
+      ]
+    },
+    "side": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_side.json"
+        }
+      ]
+    },
+    "splashRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
     },
     "tristate": {
       "anyOf": [

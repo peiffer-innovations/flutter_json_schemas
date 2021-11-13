@@ -3,14 +3,21 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/asset_image.json",
   "$comment": "https://api.flutter.dev/flutter/painting/AssetImage-class.html",
   "type": "object",
-  "title": "AssetImageBuilder",
+  "title": "AssetImage",
   "required": [
     "name"
   ],
   "additionalProperties": false,
   "properties": {
     "alignment": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        }
+      ]
     },
     "cacheHeight": {
       "anyOf": [

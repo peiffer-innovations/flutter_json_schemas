@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/center.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/Center-class.html",
-  "title": "CenterBuilder",
+  "title": "Center",
   "oneOf": [
     {
       "type": "null"

@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/animated_opacity.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html",
   "type": "object",
-  "title": "AnimatedOpacityBuilder",
+  "title": "AnimatedOpacity",
   "additionalProperties": false,
   "required": [
     "duration",

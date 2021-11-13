@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/material.json",
   "$comment": "https://api.flutter.dev/flutter/material/Material-class.html",
-  "title": "MaterialBuilder",
+  "title": "Material",
   "oneOf": [
     {
       "type": "null"

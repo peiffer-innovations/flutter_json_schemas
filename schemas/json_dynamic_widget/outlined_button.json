@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/outlined_button.json",
   "$comment": "https://api.flutter.dev/flutter/material/OutlinedButton-class.html",
   "type": "object",
-  "title": "OutlinedButtonBuilder",
+  "title": "OutlinedButton",
   "additionalProperties": false,
   "properties": {
     "autofocus": {

@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/floating_action_button.json",
   "$comment": "https://api.flutter.dev/flutter/material/FloatingActionButton-class.html",
   "type": "object",
-  "title": "FloatingActionButtonBuilder",
+  "title": "FloatingActionButton",
   "additionalProperties": false,
   "properties": {
     "autofocus": {
@@ -32,6 +32,19 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "enableFeedback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },

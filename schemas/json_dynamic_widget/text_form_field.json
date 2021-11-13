@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text_form_field.json",
   "$comment": "https://api.flutter.dev/flutter/material/TextFormField-class.html",
   "type": "object",
-  "title": "TextFormFieldBuilder",
+  "title": "TextFormField",
   "additionalProperties": false,
   "properties": {
     "autocorrect": {
@@ -135,6 +135,19 @@
         }
       ]
     },
+    "enableIMEPersonalizedLearning": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "enableInteractiveSelection": {
       "anyOf": [
         {
@@ -251,16 +264,13 @@
         }
       ]
     },
-    "maxLengthEnforced": {
+    "maxLengthEnforcement": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/max_length_enforcement.json"
         }
       ]
     },
@@ -328,6 +338,9 @@
         }
       ]
     },
+    "restorationId": {
+      "type": "string"
+    },
     "scrollPadding": {
       "anyOf": [
         {
@@ -347,6 +360,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_physics.json"
         }
       ]
+    },
+    "selectionControls": {
+      "type": "string"
     },
     "showCursor": {
       "anyOf": [

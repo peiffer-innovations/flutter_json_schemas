@@ -3,9 +3,19 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/dropdown_button_form_field.json",
   "$comment": "https://api.flutter.dev/flutter/material/DropdownButtonFormField-class.html",
   "type": "object",
-  "title": "DropdownButtonFormFieldBuilder",
+  "title": "DropdownButtonFormField",
   "additionalProperties": false,
   "properties": {
+    "alignment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        }
+      ]
+    },
     "autofocus": {
       "anyOf": [
         {
@@ -97,6 +107,19 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "enableFeedback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -230,6 +253,19 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "menuMaxHeight": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },

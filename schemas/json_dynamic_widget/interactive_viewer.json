@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/interactive_viewer.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/InteractiveViewer-class.html",
   "type": "object",
-  "title": "InteractiveViewerBuilder",
+  "title": "InteractiveViewer",
   "additionalProperties": false,
   "properties": {
     "alignPanAxis": {
@@ -28,6 +28,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
         }
       ]
+    },
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
     },
     "constrained": {
       "anyOf": [

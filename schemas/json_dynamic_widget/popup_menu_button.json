@@ -3,11 +3,8 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/popup_menu_button.json",
   "$comment": "https://api.flutter.dev/flutter/material/PopupMenuButton-class.html",
   "type": "object",
-  "title": "PopupMenuButtonBuilder",
+  "title": "PopupMenuButton",
   "additionalProperties": false,
-  "required": [
-    "itemBuilder"
-  ],
   "properties": {
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -35,6 +32,19 @@
         }
       ]
     },
+    "enableFeedback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "icon": {
       "anyOf": [
         {
@@ -42,6 +52,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
+    },
+    "iconSize": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
         }
       ]
     },

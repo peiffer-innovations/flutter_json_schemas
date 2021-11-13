@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/list_view.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/ListView-class.html",
-  "title": "ListViewBuilder",
+  "title": "ListView",
   "oneOf": [
     {
       "type": "null"
@@ -112,6 +112,16 @@
             },
             {
               "type": "boolean"
+            }
+          ]
+        },
+        "prototypeItem": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
             }
           ]
         },

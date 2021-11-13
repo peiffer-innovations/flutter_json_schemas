@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/limited_box.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/LimitedBox-class.html",
   "type": "object",
-  "title": "LimitedBoxBuilder",
+  "title": "LimitedBox",
   "additionalProperties": false,
   "properties": {
     "maxHeight": {

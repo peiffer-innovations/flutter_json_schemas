@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/single_child_scroll_view.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html",
-  "title": "SingleChildScrollViewBuilder",
+  "title": "SingleChildScrollView",
   "oneOf": [
     {
       "type": "null"
@@ -19,6 +19,9 @@
         },
         "dragStartBehavior": {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json"
+        },
+        "keyboardDismissBehavior": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_view_keyboard_dismiss_behavior.json"
         },
         "padding": {
           "anyOf": [

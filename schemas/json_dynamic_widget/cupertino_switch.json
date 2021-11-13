@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/cupertino_switch.json",
   "$comment": "https://api.flutter.dev/flutter/cupertino/CupertinoSwitch-class.html",
   "type": "object",
-  "title": "CupertinoSwitchBuilder",
+  "title": "CupertinoSwitch",
   "additionalProperties": false,
   "properties": {
     "activeColor": {
@@ -49,6 +49,9 @@
     },
     "onSaved": {
       "type": "string"
+    },
+    "thumbColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "trackColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"

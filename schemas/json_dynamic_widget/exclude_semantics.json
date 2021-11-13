@@ -1,12 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/offstage.json",
-  "$comment": "https://api.flutter.dev/flutter/widgets/Offstage-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/exclude_semantics.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/ExcludeSemantics-class.html",
   "type": "object",
-  "title": "Offstage",
+  "title": "ExcludeSemantics",
   "additionalProperties": false,
   "properties": {
-    "offstage": {
+    "excluding": {
       "anyOf": [
         {
           "type": "string"

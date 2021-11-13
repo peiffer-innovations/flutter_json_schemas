@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/elevated_button.json",
   "$comment": "https://api.flutter.dev/flutter/material/ElevatedButton-class.html",
   "type": "object",
-  "title": "ElevatedButtonBuilder",
+  "title": "ElevatedButton",
   "additionalProperties": false,
   "properties": {
     "autofocus": {

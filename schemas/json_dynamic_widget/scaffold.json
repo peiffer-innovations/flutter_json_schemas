@@ -3,7 +3,7 @@
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/scaffold.json",
   "$comment": "https://api.flutter.dev/flutter/material/Scaffold-class.html",
   "type": "object",
-  "title": "ScaffoldBuilder",
+  "title": "Scaffold",
   "additionalProperties": false,
   "properties": {
     "appBar": {
@@ -166,6 +166,12 @@
         }
       ]
     },
+    "onDrawerChanged": {
+      "type": "string"
+    },
+    "onEndDrawerChanged": {
+      "type": "string"
+    },
     "primary": {
       "anyOf": [
         {
@@ -192,18 +198,8 @@
         }
       ]
     },
-    "resizeToAvoidBottomPadding": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
+    "restorationId": {
+      "type": "string"
     }
   }
 }
