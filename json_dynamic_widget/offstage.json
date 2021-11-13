@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/offstage.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/Offstage-class.html",
+  "type": "object",
+  "title": "Offstage",
+  "additionalProperties": false,
+  "properties": {
+    "offstage": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    }
+  }
+}
