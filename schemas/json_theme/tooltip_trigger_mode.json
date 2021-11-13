@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tooltip_trigger_mode.json",
+  "$comment": "https://api.flutter.dev/flutter/material/TooltipTriggerMode-class.html",
+  "title": "TooltipTriggerMode",
+  "type": "string",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "longPress",
+        "manual",
+        "tap"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

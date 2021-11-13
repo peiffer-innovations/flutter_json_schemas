@@ -1,37 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tooltip_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/TooltipThemeData-class.html",
-  "title": "TooltipThemeData",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_double.json",
+  "$comment": "https://api.flutter.dev/flutter/material/MaterialStateProperty-class.html",
+  "title": "MaterialStatePropertyDouble",
   "type": "object",
   "properties": {
-    "enableFeedback": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
-    "excludeFromSemantics": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
-    "height": {
+    "disabled": {
       "anyOf": [
         {
           "type": "string"
@@ -41,40 +15,7 @@
         }
       ]
     },
-    "margin": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "padding": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-        }
-      ]
-    },
-    "preferBelow": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
-    "showDuration": {
+    "dragged": {
       "anyOf": [
         {
           "type": "string"
@@ -84,10 +25,7 @@
         }
       ]
     },
-    "triggerMode": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tooltip_trigger_mode.json"
-    },
-    "verticalOffset": {
+    "empty": {
       "anyOf": [
         {
           "type": "string"
@@ -97,7 +35,47 @@
         }
       ]
     },
-    "waitDuration": {
+    "error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "focused": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "hovered": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "pressed": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "selected": {
       "anyOf": [
         {
           "type": "string"

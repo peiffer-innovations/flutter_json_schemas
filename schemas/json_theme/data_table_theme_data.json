@@ -5,6 +5,16 @@
   "title": "DataTableThemeData",
   "additionalProperties": false,
   "properties": {
+    "checkboxHorizontalMargin": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "columnSpacing": {
       "anyOf": [
         {
@@ -16,7 +26,14 @@
       ]
     },
     "dataRowColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+        }
+      ]
     },
     "dataRowHeight": {
       "anyOf": [
@@ -38,6 +55,16 @@
         }
       ]
     },
+    "decoration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_decoration.json"
+        }
+      ]
+    },
     "dividerThickness": {
       "anyOf": [
         {
@@ -49,7 +76,14 @@
       ]
     },
     "headingRowColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+        }
+      ]
     },
     "headingRowHeight": {
       "anyOf": [

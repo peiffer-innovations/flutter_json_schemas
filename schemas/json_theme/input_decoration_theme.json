@@ -28,6 +28,16 @@
         }
       ]
     },
+    "constraints": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_constraints.json"
+        }
+      ]
+    },
     "contentPadding": {
       "anyOf": [
         {
@@ -106,6 +116,16 @@
     },
     "floatingLabelBehavior": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/floating_label_behavior.json"
+    },
+    "floatingLabelStyle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
+        }
+      ]
     },
     "focusColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"

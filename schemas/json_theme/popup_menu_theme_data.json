@@ -18,6 +18,19 @@
         }
       ]
     },
+    "enableFeedback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "shape": {
       "anyOf": [
         {

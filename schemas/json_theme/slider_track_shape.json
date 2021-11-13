@@ -8,16 +8,6 @@
     "type"
   ],
   "properties": {
-    "disabledThumbGapWidth": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        }
-      ]
-    },
     "type": {
       "type": "string",
       "enum": [

@@ -142,6 +142,16 @@
         }
       ]
     },
+    "checkboxTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/checkbox_theme_data.json"
+        }
+      ]
+    },
     "chipTheme": {
       "anyOf": [
         {
@@ -373,8 +383,28 @@
         }
       ]
     },
+    "radioTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/radio_theme_data.json"
+        }
+      ]
+    },
     "scaffoldBackgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "scrollbarTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scrollbar_theme_data.json"
+        }
+      ]
     },
     "secondaryHeaderColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -410,6 +440,16 @@
     },
     "splashFactory": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json"
+    },
+    "switchTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/switch_theme_data.json"
+        }
+      ]
     },
     "tabBarTheme": {
       "anyOf": [
