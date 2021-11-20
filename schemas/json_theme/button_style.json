@@ -38,6 +38,9 @@
     "elevation": {
       "anyOf": [
         {
+          "type": "number"
+        },
+        {
           "type": "string"
         },
         {

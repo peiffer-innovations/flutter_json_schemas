@@ -87,6 +87,9 @@
     "thickness": {
       "anyOf": [
         {
+          "type": "number"
+        },
+        {
           "type": "string"
         },
         {
