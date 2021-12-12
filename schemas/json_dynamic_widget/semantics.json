@@ -341,6 +341,9 @@
     "onSetSelection": {
       "type": "string"
     },
+    "onSetText": {
+      "type": "string"
+    },
     "onTap": {
       "type": "string"
     },

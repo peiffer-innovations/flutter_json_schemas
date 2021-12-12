@@ -91,6 +91,9 @@
         }
       ]
     },
+    "richMessage": {
+      "type": "string"
+    },
     "showDuration": {
       "anyOf": [
         {

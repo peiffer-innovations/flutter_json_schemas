@@ -129,6 +129,16 @@
     "name": {
       "type": "string"
     },
+    "opacity": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "package": {
       "type": "string"
     },

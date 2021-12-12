@@ -87,6 +87,9 @@
     "hoverColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "iconColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "isThreeLine": {
       "anyOf": [
         {
@@ -159,6 +162,9 @@
         }
       ]
     },
+    "selectedColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "selectedTileColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -172,6 +178,9 @@
         }
       ]
     },
+    "style": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_style.json"
+    },
     "subtitle": {
       "anyOf": [
         {
@@ -181,6 +190,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
         }
       ]
+    },
+    "textColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "tileColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"

@@ -25,6 +25,12 @@
     "focusNode": {
       "type": "string"
     },
+    "onFocusChange": {
+      "type": "string"
+    },
+    "onHover": {
+      "type": "string"
+    },
     "onLongPress": {
       "type": "string"
     },
