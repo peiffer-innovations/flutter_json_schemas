@@ -91,6 +91,9 @@
         }
       ]
     },
+    "leadingDistribution": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_leading_distribution.json"
+    },
     "letterSpacking": {
       "anyOf": [
         {
@@ -110,6 +113,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/locale.json"
         }
       ]
+    },
+    "overflow": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_overflow.json"
     },
     "package": {
       "type": "string"

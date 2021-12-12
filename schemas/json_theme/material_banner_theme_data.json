@@ -18,6 +18,16 @@
         }
       ]
     },
+    "elevation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "leadingPadding": {
       "anyOf": [
         {

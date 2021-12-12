@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scrollbar_theme_data.json",
   "$comment": "https://api.flutter.dev/flutter/material/ScrollbarThemeData-class.html",
-  "title": "SwitchThemeDataSchema",
+  "title": "SwitchThemeData",
   "type": "object",
   "properties": {
     "crossAxisMargin": {

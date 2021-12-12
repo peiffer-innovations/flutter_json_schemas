@@ -31,6 +31,9 @@
         }
       ]
     },
+    "androidOverscrollIndicator": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/android_overscroll_indicator.json"
+    },
     "appBarTheme": {
       "anyOf": [
         {
@@ -221,6 +224,16 @@
         }
       ]
     },
+    "drawerTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drawer_theme_data.json"
+        }
+      ]
+    },
     "elevatedButtonTheme": {
       "anyOf": [
         {
@@ -295,8 +308,28 @@
         }
       ]
     },
+    "listTileTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_theme_data.json"
+        }
+      ]
+    },
     "materialTapTargetSize": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_tap_target_size.json"
+    },
+    "navigationBarTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_bar_theme_data.json"
+        }
+      ]
     },
     "navigationRailTheme": {
       "anyOf": [

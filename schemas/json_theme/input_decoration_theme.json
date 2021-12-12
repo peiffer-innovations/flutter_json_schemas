@@ -183,6 +183,9 @@
     "hoverColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "iconColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "isDense": {
       "anyOf": [
         {
@@ -206,6 +209,9 @@
         }
       ]
     },
+    "prefixIconColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "prefixStyle": {
       "anyOf": [
         {
@@ -215,6 +221,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
+    },
+    "suffixIconColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "suffixStyle": {
       "anyOf": [

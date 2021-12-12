@@ -16,6 +16,9 @@
         }
       ]
     },
+    "blurStyle": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blur_style.json"
+    },
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
