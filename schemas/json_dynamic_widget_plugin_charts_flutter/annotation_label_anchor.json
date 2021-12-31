@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_anchor.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/AnnotationLabelAnchor.html",
+  "type": "string",
+  "title": "AnnotationLabelAnchor",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "end",
+        "middle",
+        "start"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

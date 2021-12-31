@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/numeric_extents.json",
+  "$comment": "https://pub.dev/documentation/charts_flutter/latest/flutter/NumericExtents-class.html",
+  "title": "NumericExtents",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "max": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "min": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

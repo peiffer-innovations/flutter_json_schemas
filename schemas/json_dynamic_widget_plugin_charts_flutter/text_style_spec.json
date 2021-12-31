@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/text_style_spec.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/TextStyleSpec-class.html",
+  "title": "TextStyleSpec",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "color": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "fontFamily": {
+      "type": "string"
+    },
+    "fontSize": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "fontWeight": {
+      "type": "string"
+    },
+    "lineHeight": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/ordinal_tick_provider_spec.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/OrdinalTickProviderSpec-class.html",
+  "title": "AxisSpec",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "ticks": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/tick_spec.json"
+          }
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/tick_spec.json"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "basic",
+        "static"
+      ]
+    }
+  }
+}

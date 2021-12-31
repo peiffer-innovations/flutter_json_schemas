@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/inside_justification.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/InsideJustification.html",
+  "type": "string",
+  "title": "InsideJustification",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "topEnd",
+        "topStart"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

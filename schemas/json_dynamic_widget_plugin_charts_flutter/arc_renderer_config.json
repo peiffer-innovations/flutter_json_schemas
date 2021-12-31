@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/arc_renderer_config.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/ArcRendererConfig-class.html",
+  "title": "ArcRendererConfig",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "arcLength": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "arcRatio": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "arcRendererDecorators": {
+      "type": "string"
+    },
+    "arcWidth": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "customRendererId": {
+      "type": "string"
+    },
+    "layoutPaintOrder": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "minHoleWidthForCenterContent": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "startAngle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "strokeWidthPx": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "symbolRenderer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/symbol_renderer.json"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "arc"
+      ]
+    }
+  }
+}

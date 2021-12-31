@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/series_renderer_config.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/SeriesRendererConfig-class.html",
+  "title": "SeriesRendererConfig",
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/arc_renderer_config.json"
+    },
+    {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/bar_renderer_config.json"
+    },
+    {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/bar_target_line_renderer_config.json"
+    },
+    {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/line_renderer_config.json"
+    },
+    {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/point_renderer_config.json"
+    },
+    {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/symbol_annotation_renderer_config.json"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/date_time_extents.json",
+  "$comment": "https://pub.dev/documentation/charts_flutter/latest/flutter/DateTimeExtents-class.html",
+  "title": "DateTimeExtents",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "end": {
+      "type": "string"
+    },
+    "start": {
+      "type": "string"
+    }
+  }
+}

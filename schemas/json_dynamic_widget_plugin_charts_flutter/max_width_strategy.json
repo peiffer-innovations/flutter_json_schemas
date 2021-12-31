@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/max_width_strategy.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/MaxWidthStrategy.html",
+  "type": "string",
+  "title": "MaxWidthStrategy",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "ellipsize",
+        "truncate"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    }
+  ]
+}

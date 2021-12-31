@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/select_nearest.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/SelectNearest-class.html",
+  "title": "SelectNearest",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "eventTrigger": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/selection_trigger.json"
+        }
+      ]
+    },
+    "maximumDomainDistancePx": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "selectAcrossAllDrawAreaComponents": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "selectClosestSeries": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "selectionMode": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/selection_mode.json"
+        }
+      ]
+    },
+    "selectionModelType": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/selection_model_type.json"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "select_nearest"
+      ]
+    }
+  }
+}

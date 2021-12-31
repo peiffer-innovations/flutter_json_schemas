@@ -1,0 +1,140 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/series.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/Series-class.html",
+  "title": "Series",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "areaColorFn": {
+      "type": "string"
+    },
+    "colorFn": {
+      "type": "string"
+    },
+    "dashPatternFn": {
+      "type": "string"
+    },
+    "data": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      ]
+    },
+    "displayName": {
+      "type": "string"
+    },
+    "domainFormatterFn": {
+      "type": "string"
+    },
+    "domainLowerBoundFn": {
+      "type": "string"
+    },
+    "domainUpperBoundFn": {
+      "type": "string"
+    },
+    "domainFn": {
+      "type": "string"
+    },
+    "fillColorFn": {
+      "type": "string"
+    },
+    "fillPatternFn": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "insideLabelStyleAccessorFn": {
+      "type": "string"
+    },
+    "keyFn": {
+      "type": "string"
+    },
+    "labelAccessorFn": {
+      "type": "string"
+    },
+    "measureFn": {
+      "type": "string"
+    },
+    "measureFormatterFn": {
+      "type": "string"
+    },
+    "measureLowerBoundFn": {
+      "type": "string"
+    },
+    "measureOffsetFn": {
+      "type": "string"
+    },
+    "measureUpperBoundFn": {
+      "type": "string"
+    },
+    "outsideLabelStyleAccessorFn": {
+      "type": "string"
+    },
+    "overlaySeries": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "patternColorFn": {
+      "type": "string"
+    },
+    "radiusPxFn": {
+      "type": "string"
+    },
+    "seriesCategory": {
+      "type": "string"
+    },
+    "seriesColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "strokeWidthPxFn": {
+      "type": "string"
+    }
+  }
+}
