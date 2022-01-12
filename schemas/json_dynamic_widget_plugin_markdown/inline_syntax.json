@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_markdown/inline_syntax.json",
+  "$comment": "https://pub.dev/documentation/markdown/latest/markdown/InlineSyntax-class.html",
+  "title": "Markdown",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "allowIntraWord": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "pattern": {
+      "type": "string"
+    },
+    "requiresDelimiterRun": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "startCharacter": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "sub": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "autolink",
+        "autolink_extension",
+        "code",
+        "email",
+        "emoji",
+        "html",
+        "line_break",
+        "tag",
+        "text"
+      ]
+    }
+  }
+}
