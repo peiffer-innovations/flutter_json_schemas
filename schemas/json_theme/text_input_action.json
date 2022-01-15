@@ -30,6 +30,10 @@
     {
       "type": "string",
       "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
     }
   ]
 }
