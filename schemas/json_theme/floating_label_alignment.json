@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/floating_label_alignment.json",
+  "$comment": "https://api.flutter.dev/flutter/material/FloatingLabelAlignment-class.html",
+  "type": "string",
+  "title": "FloatingLabelAlignment",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "center",
+        "start"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

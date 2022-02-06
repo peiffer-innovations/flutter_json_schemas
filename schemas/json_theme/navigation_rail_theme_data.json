@@ -28,6 +28,9 @@
         }
       ]
     },
+    "indicatorColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "labelType": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_rail_label_type.json"
     },
@@ -68,6 +71,19 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
+        }
+      ]
+    },
+    "useIndicator": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     }

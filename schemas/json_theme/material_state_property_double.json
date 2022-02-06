@@ -75,6 +75,16 @@
         }
       ]
     },
+    "scrolledUnder": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "selected": {
       "anyOf": [
         {
