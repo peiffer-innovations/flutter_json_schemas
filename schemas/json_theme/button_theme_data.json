@@ -89,6 +89,19 @@
     "splashColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "splashFactory": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json"
+    },
+    "surfaceTintColor": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+        }
+      ]
+    },
     "textTheme": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_text_theme.json"
     }

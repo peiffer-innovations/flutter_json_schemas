@@ -5,35 +5,6 @@
   "title": "ThemeData",
   "type": "object",
   "properties": {
-    "accentColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "accentColorBrightness": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
-    },
-    "accentIconTheme": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/icon_theme_data.json"
-        }
-      ]
-    },
-    "accentTextTheme": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_theme.json"
-        }
-      ]
-    },
-    "androidOverscrollIndicator": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/android_overscroll_indicator.json"
-    },
     "appBarTheme": {
       "anyOf": [
         {
@@ -57,6 +28,9 @@
         }
       ]
     },
+    "backgroundColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "bannerTheme": {
       "anyOf": [
         {
@@ -66,9 +40,6 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_banner_theme_data.json"
         }
       ]
-    },
-    "backgroundColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "bottomAppBarColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -82,9 +53,6 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_app_bar_theme.json"
         }
       ]
-    },
-    "brightness": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
     },
     "bottomNavigationBarTheme": {
       "anyOf": [
@@ -106,6 +74,9 @@
         }
       ]
     },
+    "brightness": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
+    },
     "buttonBarTheme": {
       "anyOf": [
         {
@@ -115,9 +86,6 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_bar_theme_data.json"
         }
       ]
-    },
-    "buttonColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "buttonTheme": {
       "anyOf": [
@@ -174,6 +142,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color_scheme.json"
         }
       ]
+    },
+    "colorSchemeSeed": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "cupertinoOverrideTheme": {
       "anyOf": [
@@ -244,21 +215,18 @@
         }
       ]
     },
-    "errorColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "fixTextFieldOutlineLabel": {
+    "expansionTileTheme": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/expansion_tile_theme_data.json"
         }
       ]
+    },
+    "errorColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "floatingActionButtonTheme": {
       "anyOf": [
@@ -410,6 +378,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_theme.json"
+        }
+      ]
+    },
+    "progressIndicatorTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/progress_indicator_theme_data.json"
         }
       ]
     },

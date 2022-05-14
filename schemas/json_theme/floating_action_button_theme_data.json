@@ -120,6 +120,16 @@
         }
       ]
     },
+    "iconSize": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "largeSizeConstraints": {
       "anyOf": [
         {

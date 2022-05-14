@@ -28,19 +28,6 @@
         }
       ]
     },
-    "isAlwaysShown": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
     "mainAxisMargin": {
       "anyOf": [
         {
@@ -71,19 +58,6 @@
         }
       ]
     },
-    "showTrackOnHover": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
     "thickness": {
       "anyOf": [
         {
@@ -104,6 +78,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+        }
+      ]
+    },
+    "thumbVisibility": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_bool.json"
         }
       ]
     },
