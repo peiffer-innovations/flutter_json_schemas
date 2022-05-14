@@ -124,6 +124,9 @@
     "onTapDown": {
       "type": "string"
     },
+    "onTapUp": {
+      "type": "string"
+    },
     "overlayColor": {
       "anyOf": [
         {

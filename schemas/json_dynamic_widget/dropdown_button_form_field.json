@@ -45,6 +45,16 @@
     "autovalidateMode": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/autovalidate_mode.json"
     },
+    "borderRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius.json"
+        }
+      ]
+    },
     "decoration": {
       "anyOf": [
         {
@@ -316,6 +326,19 @@
           "items": {
             "type": "object",
             "additionalProperties": true
+          }
+        }
+      ]
+    },
+    "shadows": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shadow.json"
           }
         }
       ]

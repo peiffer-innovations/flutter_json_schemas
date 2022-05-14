@@ -294,6 +294,16 @@
         }
       ]
     },
+    "mouseCursor": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text_form_field.json"
+        }
+      ]
+    },
     "obscureText": {
       "anyOf": [
         {

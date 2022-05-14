@@ -9,30 +9,7 @@
     "controller": {
       "type": "string"
     },
-    "hoverThickness": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        }
-      ]
-    },
     "interactive": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
-    "isAlwaysShown": {
       "anyOf": [
         {
           "type": "string"
@@ -61,7 +38,17 @@
     "scrollbarOrientation": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scrollbar_orientation.json"
     },
-    "showTrackOnHover": {
+    "thickness": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "thumbVisibility": {
       "anyOf": [
         {
           "type": "string"
@@ -71,16 +58,6 @@
         },
         {
           "type": "boolean"
-        }
-      ]
-    },
-    "thickness": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
         }
       ]
     }

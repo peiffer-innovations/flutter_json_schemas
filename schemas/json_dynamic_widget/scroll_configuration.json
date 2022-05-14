@@ -6,9 +6,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "androidOverscrollIndicator": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/android_overscroll_indicator.json"
-    },
     "dragDevices": {
       "type": "string"
     },

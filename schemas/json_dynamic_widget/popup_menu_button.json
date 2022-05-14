@@ -9,6 +9,16 @@
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "constraints": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_constraints.json"
+        }
+      ]
+    },
     "elevation": {
       "anyOf": [
         {
@@ -97,6 +107,9 @@
         }
       ]
     },
+    "position": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/popup_menu_position.json"
+    },
     "shape": {
       "anyOf": [
         {
@@ -104,6 +117,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json"
+        }
+      ]
+    },
+    "splashRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
         }
       ]
     },

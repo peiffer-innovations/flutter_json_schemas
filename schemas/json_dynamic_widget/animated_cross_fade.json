@@ -33,6 +33,19 @@
         }
       ]
     },
+    "excludeBottomFocus": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "firstCurve": {
       "type": "string"
     },
