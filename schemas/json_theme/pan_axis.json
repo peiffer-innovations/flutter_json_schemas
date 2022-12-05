@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/pan_axis.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/PanAxis.html",
+  "type": "string",
+  "title": "PanAxis",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "aligned",
+        "free",
+        "horizontal",
+        "vertical"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_style.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ButtonStyle-class.html",
-  "title": "ButtonStyle",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/menu_style.json",
+  "$comment": "https://api.flutter.dev/flutter/material/MenuStyle-class.html",
+  "title": "MenuStyle",
   "additionalProperties": false,
   "properties": {
     "alignment": {
@@ -12,16 +12,6 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
-        }
-      ]
-    },
-    "animationDuration": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
         }
       ]
     },
@@ -38,26 +28,10 @@
     "elevation": {
       "anyOf": [
         {
-          "type": "number"
-        },
-        {
           "type": "string"
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_double.json"
-        }
-      ]
-    },
-    "enableFeedback": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
         }
       ]
     },
@@ -68,39 +42,6 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_size.json"
-        }
-      ]
-    },
-    "foregroundColor": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
-        }
-      ]
-    },
-    "iconColor": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
-        }
-      ]
-    },
-    "iconSize": {
-      "anyOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_double.json"
         }
       ]
     },
@@ -121,26 +62,6 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_size.json"
-        }
-      ]
-    },
-    "mouseCursor": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_mouse_cursor.json"
-        }
-      ]
-    },
-    "overlayColor": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
         }
       ]
     },
@@ -184,16 +105,13 @@
         }
       ]
     },
-    "tapTargetSize": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_tap_target_size.json"
-    },
-    "textStyle": {
+    "surfaceTintColor": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_text_style.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
         }
       ]
     },

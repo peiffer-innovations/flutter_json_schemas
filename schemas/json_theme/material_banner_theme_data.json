@@ -4,8 +4,9 @@
   "$comment": "https://api.flutter.dev/flutter/material/MaterialBannerThemeData-class.html",
   "title": "MaterialBannerThemeData",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
-    "color": {
+    "backgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "contentTextStyle": {
@@ -17,6 +18,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
+    },
+    "dividerColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "elevation": {
       "anyOf": [
@@ -47,6 +51,12 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
         }
       ]
+    },
+    "shadowColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "surfaceTintColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     }
   }
 }

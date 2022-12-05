@@ -4,6 +4,7 @@
   "$comment": "https://api.flutter.dev/flutter/material/NavigationBarThemeData-class.html",
   "title": "NavigationBarThemeData",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "backgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -63,6 +64,12 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_text_style.json"
         }
       ]
+    },
+    "shadowColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "surfaceTintColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     }
   }
 }

@@ -5,6 +5,16 @@
   "title": "DialogTheme",
   "type": "object",
   "properties": {
+    "actionsPadding": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+        }
+      ]
+    },
     "alignment": {
       "anyOf": [
         {
@@ -38,6 +48,19 @@
         }
       ]
     },
+    "iconCoor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "shadowColor": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json"
+        }
+      ]
+    },
     "shape": {
       "anyOf": [
         {
@@ -47,6 +70,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json"
         }
       ]
+    },
+    "surfaceTintColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "titleTextStyle": {
       "anyOf": [
