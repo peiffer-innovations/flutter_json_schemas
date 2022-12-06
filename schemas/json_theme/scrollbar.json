@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/scrollbar.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/Scrollbar-class.html",
+  "type": "object",
+  "title": "Scrollbar",
+  "additionalProperties": false,
+  "properties": {
+    "controller": {
+      "type": "string"
+    },
+    "interactive": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "notificationPredicate": {
+      "type": "string"
+    },
+    "radius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/radius.json"
+        }
+      ]
+    },
+    "scrollbarOrientation": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scrollbar_orientation.json"
+    },
+    "thickness": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "thumbVisibility": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    }
+  }
+}

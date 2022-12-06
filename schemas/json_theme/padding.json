@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/padding.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/Padding-class.html",
+  "type": "object",
+  "title": "Padding",
+  "additionalProperties": false,
+  "required": [
+    "padding"
+  ],
+  "properties": {
+    "padding": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+        }
+      ]
+    }
+  }
+}

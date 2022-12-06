@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/scroll_configuration.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/ScrollConfiguration-class.html",
+  "title": "ScrollConfiguration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "dragDevices": {
+      "type": "string"
+    },
+    "overscroll": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "physics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_physics.json"
+        }
+      ]
+    },
+    "platform": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/target_platform.json"
+    },
+    "scrollbars": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/clip_rrect.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/ClipRRect-class.html",
+  "type": "object",
+  "title": "ClipRRect",
+  "additionalProperties": false,
+  "required": [
+    "borderRadius"
+  ],
+  "properties": {
+    "borderRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius.json"
+        }
+      ]
+    },
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
+    },
+    "clipper": {
+      "type": "string"
+    }
+  }
+}

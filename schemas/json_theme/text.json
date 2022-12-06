@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text_span.json",
-  "$comment": "https://api.flutter.dev/flutter/widgets/TextSpan-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/Text-class.html",
   "type": "object",
-  "title": "TextSpan",
+  "title": "Text",
   "additionalProperties": false,
   "required": [
     "text"
@@ -31,6 +31,9 @@
     },
     "overflow": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_overflow.json"
+    },
+    "selectionColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "semanticsLabel": {
       "type": "string"

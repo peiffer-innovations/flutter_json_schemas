@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text_button.json",
+  "$comment": "https://api.flutter.dev/flutter/material/TextButton-class.html",
+  "type": "object",
+  "title": "TextButton",
+  "additionalProperties": false,
+  "properties": {
+    "autofocus": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
+    },
+    "focusNode": {
+      "type": "string"
+    },
+    "onFocusChange": {
+      "type": "string"
+    },
+    "onHover": {
+      "type": "string"
+    },
+    "onLongPress": {
+      "type": "string"
+    },
+    "onPressed": {
+      "type": "string"
+    },
+    "statesController": {
+      "type": "string"
+    },
+    "style": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_style.json"
+        }
+      ]
+    }
+  }
+}

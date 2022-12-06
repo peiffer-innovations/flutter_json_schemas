@@ -1,21 +1,25 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text_span.json",
-  "$comment": "https://api.flutter.dev/flutter/widgets/TextSpan-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/animated_default_text_style.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html",
   "type": "object",
-  "title": "TextSpan",
+  "title": "AnimatedDefaultTextStyle",
   "additionalProperties": false,
   "required": [
-    "text"
+    "duration",
+    "style"
   ],
   "properties": {
-    "locale": {
+    "curve": {
+      "type": "string"
+    },
+    "duration": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/locale.json"
+          "type": "number"
         }
       ]
     },
@@ -29,11 +33,11 @@
         }
       ]
     },
+    "onEnd": {
+      "type": "string"
+    },
     "overflow": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_overflow.json"
-    },
-    "semanticsLabel": {
-      "type": "string"
     },
     "softWrap": {
       "anyOf": [
@@ -48,16 +52,6 @@
         }
       ]
     },
-    "strutStyle": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/strut_style.json"
-        }
-      ]
-    },
     "style": {
       "anyOf": [
         {
@@ -68,14 +62,8 @@
         }
       ]
     },
-    "text": {
-      "type": "string"
-    },
     "textAlign": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_align.json"
-    },
-    "textDirection": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
     },
     "textHeightBehavior": {
       "anyOf": [
@@ -84,16 +72,6 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_height_behavior.json"
-        }
-      ]
-    },
-    "textScaleFactor": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
         }
       ]
     },
