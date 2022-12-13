@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/hit_test_behavior.json",
+  "$comment": "https://api.flutter.dev/flutter/rendering/HitTestBehavior-class.html",
+  "type": "string",
+  "title": "HitTestBehavior",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "deferToChild",
+        "opaque",
+        "translucent"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

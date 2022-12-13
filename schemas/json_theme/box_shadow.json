@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_shadow.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/BoxShadow-class.html",
+  "type": "object",
+  "title": "BoxShadow",
+  "additionalProperties": false,
+  "properties": {
+    "blurRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "blurStyle": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blur_style.json"
+    },
+    "color": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "offset": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/offset.json"
+        }
+      ]
+    },
+    "spreadRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

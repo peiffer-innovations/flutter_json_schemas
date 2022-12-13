@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/ShapeBorder-class.html",
+  "title": "ShapeBorder",
+  "type": "object",
+  "properties": {
+    "borderRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius.json"
+        }
+      ]
+    },
+    "borderSide": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_side.json"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "circle",
+        "rectangle",
+        "rounded",
+        "stadium"
+      ]
+    }
+  }
+}

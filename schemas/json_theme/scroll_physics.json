@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_physics.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/ScrollPhysics-class.html",
+  "title": "ScrollPhysics",
+  "type": "object",
+  "properties": {
+    "parent": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_physics.json"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "always",
+        "bouncing",
+        "clamping",
+        "fixedExtent",
+        "never",
+        "page",
+        "rangeMaintaining"
+      ]
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_bar_theme_data.json",
+  "$comment": "https://api.flutter.dev/flutter/material/NavigationBarThemeData-class.html",
+  "title": "NavigationBarThemeData",
+  "type": "object",
+  "properties": {
+    "backgroundColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "elevation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "height": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "iconTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_icon_theme_data.json"
+        }
+      ]
+    },
+    "indicatorColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "indicatorShape": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json"
+        }
+      ]
+    },
+    "labelBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_destination_label_behavior.json"
+    },
+    "labelTextStyle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_text_style.json"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/image_provider.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/ImageProvider-class.html",
+  "title": "ImageProvider",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "assetName": {
+      "type": "string"
+    },
+    "bytes": {
+      "type": "string"
+    },
+    "headers": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      ]
+    },
+    "package": {
+      "type": "string"
+    },
+    "scale": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "asset",
+        "memory",
+        "network"
+      ]
+    }
+  }
+}

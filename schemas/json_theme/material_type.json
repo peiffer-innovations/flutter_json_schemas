@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_type.json",
+  "$comment": "https://api.flutter.dev/flutter/material/MaterialType-class.html",
+  "title": "MaterialType",
+  "type": "string",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "button",
+        "canvas",
+        "card",
+        "circle",
+        "transparency"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

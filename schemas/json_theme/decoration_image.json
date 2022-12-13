@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/decoration_image.json",
+  "$comment": "https://api.flutter.dev/flutter/painting/DecorationImage-class.html",
+  "title": "DecorationImage",
+  "type": "object",
+  "properties": {
+    "alignment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        }
+      ]
+    },
+    "centerSlice": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/rect.json"
+        }
+      ]
+    },
+    "filterQuality": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/filter_quality.json"
+    },
+    "fit": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_fit.json"
+    },
+    "image": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/image_provider.json"
+        }
+      ]
+    },
+    "invertColors": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "isAntiAlias": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "matchTextDirection": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "opacity": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "repeat": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/image_repeat.json"
+    },
+    "scale": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

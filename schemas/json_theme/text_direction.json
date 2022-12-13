@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json",
+  "$comment": "https://api.flutter.dev/flutter/dart-ui/TextDirection-class.html",
+  "title": "TextDirection",
+  "type": "string",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "ltr",
+        "rtl"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

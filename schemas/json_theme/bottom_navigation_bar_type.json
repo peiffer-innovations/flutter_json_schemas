@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_navigation_bar_type.json",
+  "$comment": "https://api.flutter.dev/flutter/material/BottomNavigationBarType-class.html",
+  "type": "string",
+  "title": "BottomNavigationBarType",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "fixed",
+        "shifting"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}
