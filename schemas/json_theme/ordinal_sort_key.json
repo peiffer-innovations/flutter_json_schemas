@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/ordinal_sort_key.json",
+  "$comment": "https://api.flutter.dev/flutter/semantics/OrdinalSortKey-class.html",
+  "title": "OrdinalSortKey",
+  "type": "object",
+  "required": [
+    "order"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

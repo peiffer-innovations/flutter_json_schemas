@@ -1,0 +1,335 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/rect.json",
+  "$comment": "https://api.flutter.dev/flutter/dart-ui/Rect-class.html",
+  "title": "Rect",
+  "type": "object",
+  "oneOf": [
+    {
+      "required": [
+        "center",
+        "height",
+        "width",
+        "type"
+      ],
+      "properties": {
+        "center": {
+          "type": "object",
+          "required": [
+            "dx",
+            "dy"
+          ],
+          "additionaProperties": false,
+          "properties": {
+            "dx": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "dy": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            }
+          }
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "center"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "center",
+        "radius",
+        "type"
+      ],
+      "properties": {
+        "center": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dx",
+            "dy"
+          ],
+          "properties": {
+            "dx": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "dy": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            }
+          }
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "circle"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "largest"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "bottom",
+        "left",
+        "right",
+        "top",
+        "type"
+      ],
+      "properties": {
+        "bottom": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "left": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "right": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "top": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "ltrb"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "height",
+        "left",
+        "top",
+        "width",
+        "type"
+      ],
+      "properties": {
+        "height": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "left": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "top": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "ltwh"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "a",
+        "b",
+        "type"
+      ],
+      "properties": {
+        "a": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dx",
+            "dy"
+          ],
+          "properties": {
+            "dx": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "dy": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            }
+          }
+        },
+        "b": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "dx",
+            "dy"
+          ],
+          "properties": {
+            "dx": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "dy": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            }
+          }
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "points"
+          ]
+        }
+      }
+    },
+    {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "zero"
+          ]
+        }
+      }
+    }
+  ]
+}
