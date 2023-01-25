@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/filled_button_theme_data.json",
+  "$comment": "https://api.flutter.dev/flutter/material/FilledButtonThemeData-class.html",
+  "title": "FilledButtonThemeData",
+  "additionalProperties": false,
+  "properties": {
+    "style": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_style.json"
+        }
+      ]
+    }
+  }
+}

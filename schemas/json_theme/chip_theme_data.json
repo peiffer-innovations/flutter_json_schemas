@@ -30,6 +30,16 @@
         }
       ]
     },
+    "iconTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/icon_theme_data.json"
+        }
+      ]
+    },
     "padding": {
       "anyOf": [
         {
@@ -94,6 +104,9 @@
           "type": "boolean"
         }
       ]
+    },
+    "surfaceTintColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     }
   }
 }

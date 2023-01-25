@@ -24,6 +24,9 @@
     "disabledInactiveTrackColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "disabledSecondaryActiveTrackColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "disabledThumbColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -87,6 +90,9 @@
     },
     "rangeValueIndicatorShape": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/range_slider_value_indicator_shape.json"
+    },
+    "secondaryActiveTrackColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "showValueIndicator": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/show_value_indicator.json"

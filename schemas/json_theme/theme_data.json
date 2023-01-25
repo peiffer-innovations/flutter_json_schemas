@@ -4,6 +4,7 @@
   "$comment": "https://api.flutter.dev/flutter/material/ThemeData-class.html",
   "title": "ThemeData",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "appBarTheme": {
       "anyOf": [
@@ -28,9 +29,6 @@
         }
       ]
     },
-    "backgroundColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
     "bannerTheme": {
       "anyOf": [
         {
@@ -40,9 +38,6 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_banner_theme_data.json"
         }
       ]
-    },
-    "bottomAppBarColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "bottomAppBarTheme": {
       "anyOf": [
@@ -225,8 +220,15 @@
         }
       ]
     },
-    "errorColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    "filledButtonTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/filled_button_theme_data.json"
+        }
+      ]
     },
     "floatingActionButtonTheme": {
       "anyOf": [
@@ -244,6 +246,12 @@
     "fontFamily": {
       "type": "string"
     },
+    "fontFamilyFallback": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "highlightColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -252,6 +260,16 @@
     },
     "hoverColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "iconButtonTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/icon_button_theme_data.json"
+        }
+      ]
     },
     "iconTheme": {
       "anyOf": [
@@ -289,6 +307,36 @@
     "materialTapTargetSize": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_tap_target_size.json"
     },
+    "menuBarTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/menu_bar_theme_data.json"
+        }
+      ]
+    },
+    "menuButtonTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/menu_button_theme_data.json"
+        }
+      ]
+    },
+    "menuTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/menu_theme_data.json"
+        }
+      ]
+    },
     "navigationBarTheme": {
       "anyOf": [
         {
@@ -318,6 +366,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/outlined_button_theme_data.json"
         }
       ]
+    },
+    "package": {
+      "type": "string"
     },
     "pageTransitionsTheme": {
       "anyOf": [
@@ -415,9 +466,6 @@
       ]
     },
     "secondaryHeaderColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "selectedRowColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "shadowColor": {
@@ -518,9 +566,6 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/toggle_buttons_theme_data.json"
         }
       ]
-    },
-    "toggleableActiveColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "tooltipTheme": {
       "anyOf": [
