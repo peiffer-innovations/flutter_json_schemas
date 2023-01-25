@@ -57,6 +57,9 @@
     "buildCounter": {
       "type": "string"
     },
+    "contextMenuBuilder": {
+      "type": "string"
+    },
     "controller": {
       "type": "string"
     },
@@ -335,6 +338,9 @@
     "onTap": {
       "type": "string"
     },
+    "onTapOutside": {
+      "type": "string"
+    },
     "readOnly": {
       "anyOf": [
         {
@@ -430,16 +436,6 @@
     },
     "textInputAction": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_input_action.json"
-    },
-    "toolbarOptions": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/toolbar_options.json"
-        }
-      ]
     },
     "validators": {
       "anyOf": [

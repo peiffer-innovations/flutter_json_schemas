@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text.json",
-  "$comment": "https://api.flutter.dev/flutter/widgets/Text-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/rich_text.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/RichText-class.html",
   "type": "object",
-  "title": "Text",
+  "title": "RichText",
   "additionalProperties": false,
   "required": [
     "text"
@@ -35,7 +35,7 @@
     "selectionColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
-    "semanticsLabel": {
+    "selectionRegistrar": {
       "type": "string"
     },
     "softWrap": {
@@ -61,18 +61,15 @@
         }
       ]
     },
-    "style": {
+    "text": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_span.json"
         }
       ]
-    },
-    "text": {
-      "type": "string"
     },
     "textAlign": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_align.json"

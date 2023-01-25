@@ -195,6 +195,12 @@
     },
     "onVerticalDragUpdate": {
       "type": "string"
+    },
+    "supportedDevices": {
+      "type": "array",
+      "items": {
+        "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/pointer_device_kind.json"
+      }
     }
   }
 }

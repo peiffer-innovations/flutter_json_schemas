@@ -44,9 +44,6 @@
           "type": "number"
         }
       ]
-    },
-    "vsync": {
-      "type": "string"
     }
   }
 }

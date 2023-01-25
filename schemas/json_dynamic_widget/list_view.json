@@ -69,6 +69,9 @@
         "dragStartBehavior": {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json"
         },
+        "findChildIndexCallback": {
+          "type": "string"
+        },
         "itemExtent": {
           "anyOf": [
             {

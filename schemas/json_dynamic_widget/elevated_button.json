@@ -37,6 +37,9 @@
     "onPressed": {
       "type": "string"
     },
+    "statesController": {
+      "type": "string"
+    },
     "style": {
       "anyOf": [
         {

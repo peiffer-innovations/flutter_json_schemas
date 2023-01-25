@@ -251,6 +251,19 @@
         }
       ]
     },
+    "mixed": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "multiline": {
       "anyOf": [
         {
@@ -418,7 +431,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/semantics_tag_schema.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/semantics_tag.json"
         }
       ]
     },
@@ -437,6 +450,9 @@
           "type": "boolean"
         }
       ]
+    },
+    "tooltip": {
+      "type": "string"
     },
     "toggled": {
       "anyOf": [

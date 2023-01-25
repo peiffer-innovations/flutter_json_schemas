@@ -153,6 +153,15 @@
     "floatingActionButtonLocation": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/floating_action_button_location.json"
     },
+    "onDrawerChanged": {
+      "type": "string"
+    },
+    "onEndDrawerChanged": {
+      "type": "string"
+    },
+    "persistentFooterAlignment": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment_directional.json"
+    },
     "persistentFooterButtons": {
       "anyOf": [
         {
@@ -165,12 +174,6 @@
           }
         }
       ]
-    },
-    "onDrawerChanged": {
-      "type": "string"
-    },
-    "onEndDrawerChanged": {
-      "type": "string"
     },
     "primary": {
       "anyOf": [

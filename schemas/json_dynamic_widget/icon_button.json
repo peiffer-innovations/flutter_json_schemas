@@ -129,6 +129,19 @@
         }
       ]
     },
+    "isSelected": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "mouseCursor": {
       "anyOf": [
         {
@@ -191,6 +204,16 @@
         }
       ]
     },
+    "selectedIcon": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
+    },
     "splashColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -201,6 +224,16 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "style": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_style.json"
         }
       ]
     },

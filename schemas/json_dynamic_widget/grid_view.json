@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/grid_view.json",
   "$comment": "https://api.flutter.dev/flutter/widgets/GridView-class.html",
-  "title": "ListView",
+  "title": "GridView",
   "oneOf": [
     {
       "type": "null"
@@ -69,6 +69,9 @@
         "dragStartBehavior": {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json"
         },
+        "findChildIndexCallback": {
+          "type": "string"
+        },
         "gridDelegate": {
           "anyOf": [
             {
@@ -108,16 +111,6 @@
                 "type": "object",
                 "additionalProperties": true
               }
-            }
-          ]
-        },
-        "itemExtent": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "number"
             }
           ]
         },
@@ -175,6 +168,16 @@
         },
         "scrollDirection": {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/axis.json"
+        },
+        "semanticChildCount": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ]
         },
         "shrinkWrap": {
           "anyOf": [
