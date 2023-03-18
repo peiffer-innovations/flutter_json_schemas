@@ -1,0 +1,14 @@
+name: Process Schemas
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: process_files
+  cancel-in-progress: true
+
+jobs:
+  process_files:
+    runs-on: ubuntu-latest

@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/table_column_width.json",
+  "$comment": "https://api.flutter.dev/flutter/rendering/TableColumnWidth-class.html",
+  "type": "object",
+  "title": "TableColumnWidth",
+  "additionalProperties": false,
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "a": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/table_column_width.json"
+        }
+      ]
+    },
+    "b": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/table_column_width.json"
+        }
+      ]
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "fixed",
+        "flex",
+        "fraction",
+        "intrinsic",
+        "max",
+        "min"
+      ]
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

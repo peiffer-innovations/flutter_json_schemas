@@ -1,0 +1,359 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_segment.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/AnnotationSegment-class.html",
+  "title": "AnnotationSegment",
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "object",
+      "oneOf": [
+        {
+          "additionalProperties": false,
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "axisId": {
+              "type": "string"
+            },
+            "axisType": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/range_annotation_axis_type.json"
+                }
+              ]
+            },
+            "color": {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+            },
+            "dashPattern": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  }
+                }
+              ]
+            },
+            "endLabel": {
+              "type": "string"
+            },
+            "labelAnchor": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_anchor.json"
+                }
+              ]
+            },
+            "labelDirection": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_direction.json"
+                }
+              ]
+            },
+            "labelPosition": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_position.json"
+                }
+              ]
+            },
+            "labelStyleSpec": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/text_style_spec.json"
+                }
+              ]
+            },
+            "middleLabel": {
+              "type": "string"
+            },
+            "startLabel": {
+              "type": "string"
+            },
+            "strokeWidthPx": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "line_annotation"
+              ]
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "axisId": {
+              "type": "string"
+            },
+            "axisType": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/range_annotation_axis_type.json"
+                }
+              ]
+            },
+            "color": {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+            },
+            "endLabel": {
+              "type": "string"
+            },
+            "endValue": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  }
+                }
+              ]
+            },
+            "labelAnchor": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_anchor.json"
+                }
+              ]
+            },
+            "labelDirection": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_direction.json"
+                }
+              ]
+            },
+            "labelPosition": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/annotation_label_position.json"
+                }
+              ]
+            },
+            "labelStyleSpec": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/text_style_spec.json"
+                }
+              ]
+            },
+            "middleLabel": {
+              "type": "string"
+            },
+            "startLabel": {
+              "type": "string"
+            },
+            "startValue": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "boolean"
+                  }
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": true
+                  }
+                }
+              ]
+            },
+            "strokeWidthPx": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "range_annotation"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

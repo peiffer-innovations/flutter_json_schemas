@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_rive/rive.json",
+  "title": "Rive",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "alignment": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+        }
+      ]
+    },
+    "animations": {
+      "type": "string"
+    },
+    "antialiasing": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "artboard": {
+      "type": "string"
+    },
+    "asset": {
+      "type": "string"
+    },
+    "fit": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_fit.json"
+    },
+    "package": {
+      "type": "string"
+    },
+    "placeholder": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
+    },
+    "stateMachines": {
+      "type": "string"
+    },
+    "rive": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

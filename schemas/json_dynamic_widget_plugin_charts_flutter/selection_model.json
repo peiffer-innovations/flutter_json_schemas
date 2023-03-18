@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/selection_model.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/SelectionModel-class.html",
+  "title": "SelectionModel",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "selectedData": {
+      "type": "string"
+    },
+    "selectedSeries": {
+      "type": "string"
+    }
+  }
+}

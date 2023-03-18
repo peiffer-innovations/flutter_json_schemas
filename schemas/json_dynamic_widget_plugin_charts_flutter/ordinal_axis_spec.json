@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/ordinal_axis_spec.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/OrdinalAxisSpec-class.html",
+  "title": "OrdinalAxisSpec",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "renderSpec": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/render_spec.json"
+        }
+      ]
+    },
+    "scaleSpec": {
+      "type": "string"
+    },
+    "showAxisLine": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "tickFormatterSpec": {
+      "type": "string"
+    },
+    "tickProviderSpec": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "ordinal"
+      ]
+    },
+    "viewport": {
+      "type": "string"
+    }
+  }
+}

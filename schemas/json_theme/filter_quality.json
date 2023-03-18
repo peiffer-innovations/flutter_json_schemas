@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/filter_quality.json",
+  "$comment": "https://api.flutter.dev/flutter/dart-ui/FilterQuality-class.html",
+  "type": "string",
+  "title": "FilterQuality",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "high",
+        "low",
+        "medium",
+        "none"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

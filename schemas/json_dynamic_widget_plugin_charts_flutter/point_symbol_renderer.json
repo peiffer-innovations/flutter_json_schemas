@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/point_symbol_renderer.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/PointSymbolRenderer-class.html",
+  "type": "string",
+  "title": "PointSymbolRendererAnchor",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "cylinder",
+        "rectangle"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

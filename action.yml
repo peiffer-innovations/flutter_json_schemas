@@ -1,0 +1,61 @@
+# action.yml
+name: 'Deploy a Flutter Web build to GH Pages'
+description: 'Validate Dart/Flutter package'
+inputs:
+  branch:
+    description: 'Branch to create a PR for'
+    default: 'main'
+    required: false
+  channel:
+    description: '(Optional) Default flutter channel to use'
+    default: 'stable'
+    required: false
+  message:
+    description: '(Optional) Set to the commit message to use'
+    required: false
+    default: 'actions-dart-dependency-updater: updating dependencies'
+  merge:
+    description: '(Optional) Set to true to automatically merge the Pull Request if all static checks pass'
+    required: false
+    default: 'true'
+  paths:
+    description: '(Optional) Comma delimited list of paths for the Dart / Flutter package(s) to update'
+    required: false
+    default: '.'
+  pull_request:
+    description: '(Optional) Set to true to auto create a Pull Request with the updates, set to false to not create a PR'
+    required: false
+    default: 'true'
+  token:
+    description: 'Access token for the GH'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        channel: ${{ inputs.channel }}
+
+    - name: Setup Git
+      shell: bash
+      run: |
+        set -e
+
+        git config --global user.email "noop@github.com"
+        git config --global user.name "action"
+        git config --global url."https://action:${{ inputs.token }}@github.com/".insteadOf https://github.com/
+
+    - name: Update dependencies
+      shell: bash
+      run: |
+        set -e
+
+        dart pub global activate dart_dependency_updater
+        dart pub global run dart_dependency_updater:update --token ${{ inputs.token }} --message ${{ inputs.message }} --pull-request ${{ inputs.pull_request }} --merge ${{ inputs.merge }} --paths ${{ inputs.paths }} --repository ${{ github.repository }}

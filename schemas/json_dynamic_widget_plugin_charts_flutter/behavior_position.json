@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/behavior_position.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/BehaviorPosition.html",
+  "type": "string",
+  "title": "BehaviorPosition",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "bottom",
+        "end",
+        "inside",
+        "start",
+        "top"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

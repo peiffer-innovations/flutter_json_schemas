@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/axis_spec.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/AxisSpec-class.html",
+  "title": "AxisSpec",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "renderSpec": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/render_spec.json"
+        }
+      ]
+    },
+    "scaleSpec": {
+      "type": "string"
+    },
+    "showAxisLine": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "tickFormatterSpec": {
+      "type": "string"
+    },
+    "tickProviderSpec": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "bucketing",
+        "date_time",
+        "end_points_time",
+        "numeric",
+        "ordinal",
+        "percent"
+      ]
+    }
+  }
+}

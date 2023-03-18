@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/sliding_viewport.json",
+  "$comment": "https://pub.dev/documentation/charts_common/latest/common/SlidingViewport-class.html",
+  "title": "SlidingViewport",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "selectionModelType": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_charts_flutter/selection_model_type.json"
+        }
+      ]
+    }
+  }
+}

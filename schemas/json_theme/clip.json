@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/ClipRect-class.html",
+  "type": "string",
+  "title": "Clip",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "antiAlias",
+        "antiAliasWithSaveLayer",
+        "hardEdge",
+        "none"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

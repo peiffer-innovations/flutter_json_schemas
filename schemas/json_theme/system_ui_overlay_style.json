@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/system_ui_overlay_style.json",
+  "$comment": "https://api.flutter.dev/flutter/services/SystemUiOverlayStyle-class.html",
+  "title": "SystemUiOverlayStyle",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "dark",
+        "light"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "statusBarBrightness": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
+        },
+        "statusBarColor": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+        },
+        "statusBarIconBrightness": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
+        },
+        "systemNavigationBarColor": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+        },
+        "systemNavigationBarContrastEnforced": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        },
+        "systemNavigationBarDividerColor": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+        },
+        "systemNavigationBarIconBrightness": {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
+        },
+        "systemStatusBarContrastEnforced": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

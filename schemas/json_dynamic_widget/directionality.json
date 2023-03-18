@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/directionality.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/Directionality-class.html",
+  "type": "object",
+  "title": "Directionality",
+  "additionalProperties": false,
+  "required": [
+    "textDirection"
+  ],
+  "properties": {
+    "textDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
+    }
+  }
+}
