@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "$children": 0,
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_rive/rive.json",
   "title": "Rive",
   "type": "object",
