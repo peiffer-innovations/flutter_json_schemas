@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color_filter.json",
+  "$comment": "https://api.flutter.dev/flutter/widgets/ColorFiltered-class.html",
+  "title": "ColorFilter",
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "object",
+      "oneOf": [
+        {
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": [
+                "linearToSrgbGamma",
+                "srgbToLinearGamma"
+              ]
+            }
+          }
+        },
+        {
+          "required": [
+            "matrix",
+            "type"
+          ],
+          "properties": {
+            "matrix": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "mode": {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blend_mode.json"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "matrix"
+              ]
+            }
+          }
+        },
+        {
+          "required": [
+            "color",
+            "mode",
+            "type"
+          ],
+          "properties": {
+            "color": {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+            },
+            "mode": {
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blend_mode.json"
+            },
+            "type": {
+              "type": "string",
+              "enum": [
+                "mode"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
