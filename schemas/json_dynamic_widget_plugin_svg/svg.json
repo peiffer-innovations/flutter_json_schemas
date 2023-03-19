@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-06/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_svg/svg.json",
+  "$children": 0,
   "title": "Svg",
   "type": "object",
   "additionalProperties": false,
@@ -20,6 +21,12 @@
     },
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "colorBlendMode": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blend_mode.json"
+    },
+    "colorFilter": {
+      "type": "string"
     },
     "fit": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_fit.json"
