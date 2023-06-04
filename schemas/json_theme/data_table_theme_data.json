@@ -35,7 +35,17 @@
         }
       ]
     },
-    "dataRowHeight": {
+    "dataRowMaxHeight": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "dataRowMinHeight": {
       "anyOf": [
         {
           "type": "string"
