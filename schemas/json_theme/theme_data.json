@@ -29,6 +29,16 @@
         }
       ]
     },
+    "badgeTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/badge_theme_data.json"
+        }
+      ]
+    },
     "bannerTheme": {
       "anyOf": [
         {
@@ -148,6 +158,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/cupertino_theme_data.json"
+        }
+      ]
+    },
+    "datePickerTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/date_picker_theme_data.json"
         }
       ]
     },

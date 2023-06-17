@@ -22,6 +22,19 @@
         }
       ]
     },
+    "dragHandleColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "dragHandleSize": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/size.json"
+        }
+      ]
+    },
     "elevation": {
       "anyOf": [
         {
@@ -48,6 +61,9 @@
         }
       ]
     },
+    "shadowColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "shape": {
       "anyOf": [
         {
@@ -55,6 +71,19 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json"
+        }
+      ]
+    },
+    "showDragHandle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
