@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets.json",
-  "title": "EdgeInsets",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_directional.json",
+  "title": "EdgeInsetsDirectional",
   "oneOf": [
     {
       "type": "string"
@@ -30,7 +30,7 @@
             }
           ]
         },
-        "left": {
+        "end": {
           "anyOf": [
             {
               "type": "string"
@@ -40,7 +40,7 @@
             }
           ]
         },
-        "right": {
+        "start": {
           "anyOf": [
             {
               "type": "string"
