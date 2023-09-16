@@ -1,35 +1,32 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/baseline.json",
-  "$children": 1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/Baseline-class.html",
   "title": "Baseline",
-  "oneOf": [
-    {
-      "type": "null"
-    },
-    {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "baseline",
-        "baselineType"
-      ],
-      "properties": {
-        "baseline": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "number"
-            }
-          ]
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "baseline": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "baselineType": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_baseline.json"
+        {
+          "type": "number"
         }
-      }
+      ]
+    },
+    "baselineType": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_baseline.json"
+    },
+    "child": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
     }
-  ]
+  }
 }

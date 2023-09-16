@@ -1,10 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/positioned.json",
-  "$children": 1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/Positioned-class.html",
-  "type": "object",
   "title": "Positioned",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "bottom": {
@@ -64,6 +62,16 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "child": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
         }
       ]
     }

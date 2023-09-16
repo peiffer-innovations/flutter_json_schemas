@@ -1,37 +1,41 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/stack.json",
-  "$children": -1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/Stack-class.html",
   "title": "Stack",
-  "oneOf": [
-    {
-      "type": "null"
-    },
-    {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "alignment": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
-            }
-          ]
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "alignment": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "clipBehavior": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
-        },
-        "fit": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/stack_fit.json"
-        },
-        "textDirection": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment_geometry.json"
         }
-      }
+      ]
+    },
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
+    },
+    "fit": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/stack_fit.json"
+    },
+    "textDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
+    },
+    "children": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+          }
+        }
+      ]
     }
-  ]
+  }
 }

@@ -1,10 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/icon_button.json",
-  "$children": 1,
-  "$comment": "https://api.flutter.dev/flutter/material/IconButton-class.html",
-  "type": "object",
   "title": "IconButton",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "alignment": {
@@ -13,7 +11,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment_geometry.json"
         }
       ]
     },

@@ -1,14 +1,22 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/linear_progress_indicator.json",
-  "$children": 0,
-  "$comment": "https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html",
-  "type": "object",
   "title": "LinearProgressIndicator",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "backgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "borderRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius_geometry.json"
+        }
+      ]
     },
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"

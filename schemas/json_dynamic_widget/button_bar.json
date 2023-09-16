@@ -1,8 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/button_bar.json",
-  "$children": -1,
-  "$comment": "https://api.flutter.dev/flutter/material/ButtonBar-class.html",
   "title": "ButtonBar",
   "type": "object",
   "additionalProperties": false,
@@ -74,6 +72,19 @@
     },
     "overflowDirection": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/vertical_direction.json"
+    },
+    "children": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+          }
+        }
+      ]
     }
   }
 }

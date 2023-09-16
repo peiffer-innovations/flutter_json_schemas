@@ -1,10 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/placeholder.json",
-  "$children": 1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/Placeholder-class.html",
-  "type": "object",
   "title": "Placeholder",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "color": {
@@ -37,6 +35,16 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "child": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
         }
       ]
     }

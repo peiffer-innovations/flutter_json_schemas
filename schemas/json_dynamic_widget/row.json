@@ -1,36 +1,40 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/row.json",
-  "$children": -1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/Row-class.html",
   "title": "Row",
-  "oneOf": [
-    {
-      "type": "null"
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "crossAxisAlignment": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/cross_axis_alignment.json"
     },
-    {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "crossAxisAlignment": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/cross_axis_alignment.json"
+    "mainAxisAlignment": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/main_axis_alignment.json"
+    },
+    "mainAxisSize": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/main_axis_size.json"
+    },
+    "textBaseline": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_baseline.json"
+    },
+    "textDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
+    },
+    "verticalDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/vertical_direction.json"
+    },
+    "children": {
+      "anyOf": [
+        {
+          "type": "string"
         },
-        "mainAxisAlignment": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/main_axis_alignment.json"
-        },
-        "mainAxisSize": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/main_axis_size.json"
-        },
-        "textBaseline": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_baseline.json"
-        },
-        "textDirection": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_direction.json"
-        },
-        "verticalDirection": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/vertical_direction.json"
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+          }
         }
-      }
+      ]
     }
-  ]
+  }
 }

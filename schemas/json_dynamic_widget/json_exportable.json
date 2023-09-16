@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/measured.json",
-  "title": "_Measured",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_exportable.json",
+  "title": "JsonExportable",
   "type": "object",
   "additionalProperties": false,
   "properties": {

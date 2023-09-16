@@ -1,14 +1,9 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/opacity.json",
-  "$children": 1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/Opacity-class.html",
-  "type": "object",
   "title": "Opacity",
+  "type": "object",
   "additionalProperties": false,
-  "required": [
-    "opacity"
-  ],
   "properties": {
     "alwaysIncludeSemantics": {
       "anyOf": [
@@ -30,6 +25,16 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "child": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
         }
       ]
     }

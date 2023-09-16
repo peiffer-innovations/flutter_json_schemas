@@ -1,10 +1,8 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/app_bar.json",
-  "$children": 0,
-  "$comment": "https://api.flutter.dev/flutter/material/AppBar-class.html",
-  "type": "object",
   "title": "AppBar",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "actions": {
@@ -79,6 +77,9 @@
         }
       ]
     },
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
+    },
     "elevation": {
       "anyOf": [
         {
@@ -109,6 +110,19 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
+    },
+    "forceMaterialTransparency": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -146,7 +160,46 @@
       ]
     },
     "notificationPredicate": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      ]
     },
     "primary": {
       "anyOf": [
@@ -168,9 +221,6 @@
         },
         {
           "type": "number"
-        },
-        {
-          "type": "boolean"
         }
       ]
     },
@@ -193,26 +243,6 @@
     "systemOverlayStyle": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/system_ui_overlay_style.json"
     },
-    "titleTextStyle": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
-        }
-      ]
-    },
-    "toolbarTextStyle": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
-        }
-      ]
-    },
     "title": {
       "anyOf": [
         {
@@ -233,6 +263,16 @@
         }
       ]
     },
+    "titleTextStyle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
+        }
+      ]
+    },
     "toolbarHeight": {
       "anyOf": [
         {
@@ -250,6 +290,16 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "toolbarTextStyle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
     }

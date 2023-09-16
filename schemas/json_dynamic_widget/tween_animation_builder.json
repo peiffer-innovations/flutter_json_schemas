@@ -1,27 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/text_button.json",
-  "title": "TextButton",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/tween_animation_builder.json",
+  "title": "TweenAnimationBuilder",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "autofocus": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
-    "clipBehavior": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
-    },
-    "focusNode": {
+    "builder": {
       "anyOf": [
         {
           "type": "string"
@@ -63,20 +47,7 @@
         }
       ]
     },
-    "isSemanticButton": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
-    "onFocusChange": {
+    "curve": {
       "anyOf": [
         {
           "type": "string"
@@ -118,7 +89,7 @@
         }
       ]
     },
-    "onHover": {
+    "duration": {
       "anyOf": [
         {
           "type": "string"
@@ -160,7 +131,7 @@
         }
       ]
     },
-    "onLongPress": {
+    "onEnd": {
       "anyOf": [
         {
           "type": "string"
@@ -202,7 +173,7 @@
         }
       ]
     },
-    "onPressed": {
+    "tween": {
       "anyOf": [
         {
           "type": "string"
@@ -241,58 +212,6 @@
             "type": "object",
             "additionalProperties": true
           }
-        }
-      ]
-    },
-    "statesController": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        },
-        {
-          "type": "object",
-          "additionalProperties": true
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "number"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "boolean"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "additionalProperties": true
-          }
-        }
-      ]
-    },
-    "style": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_style.json"
         }
       ]
     },

@@ -1,82 +1,122 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/single_child_scroll_view.json",
-  "$children": 1,
-  "$comment": "https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html",
   "title": "SingleChildScrollView",
-  "oneOf": [
-    {
-      "type": "null"
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
     },
-    {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "clipBehavior": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
-        },
-        "controller": {
+    "controller": {
+      "anyOf": [
+        {
           "type": "string"
         },
-        "dragStartBehavior": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json"
+        {
+          "type": "number"
         },
-        "keyboardDismissBehavior": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_view_keyboard_dismiss_behavior.json"
+        {
+          "type": "boolean"
         },
-        "padding": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
-            }
-          ]
+        {
+          "type": "object",
+          "additionalProperties": true
         },
-        "physics": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_physics.json"
-            }
-          ]
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
-        "primary": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "number"
-            },
-            {
-              "type": "boolean"
-            }
-          ]
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
         },
-        "restorationId": {
-          "type": "string"
+        {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
         },
-        "reverse": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "number"
-            },
-            {
-              "type": "boolean"
-            }
-          ]
-        },
-        "scrollDirection": {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/axis.json"
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
         }
-      }
+      ]
+    },
+    "dragStartBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drag_start_behavior.json"
+    },
+    "keyboardDismissBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_view_keyboard_dismiss_behavior.json"
+    },
+    "padding": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+        }
+      ]
+    },
+    "physics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scroll_physics.json"
+        }
+      ]
+    },
+    "primary": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "restorationId": {
+      "type": "string"
+    },
+    "reverse": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "scrollDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/axis.json"
+    },
+    "child": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json"
+        }
+      ]
     }
-  ]
+  }
 }
