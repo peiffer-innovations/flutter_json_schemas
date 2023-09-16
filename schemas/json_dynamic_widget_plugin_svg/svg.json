@@ -1,8 +1,7 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget_plugin_svg/svg.json",
-  "$children": 0,
-  "title": "Svg",
+  "title": "_Svg",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -16,17 +15,50 @@
         }
       ]
     },
+    "allowDrawingOutsideViewBox": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "asset": {
       "type": "string"
+    },
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
     },
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
-    "colorBlendMode": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/blend_mode.json"
-    },
     "colorFilter": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color_filter.json"
+        }
+      ]
+    },
+    "excludeFromSemantics": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
     },
     "fit": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_fit.json"
@@ -86,11 +118,66 @@
     "image": {
       "type": "string"
     },
+    "matchTextDirection": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "package": {
       "type": "string"
     },
     "semanticsLabel": {
       "type": "string"
+    },
+    "theme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      ]
     },
     "url": {
       "type": "string"
