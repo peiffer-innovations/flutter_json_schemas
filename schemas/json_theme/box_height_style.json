@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_height_style.json",
+  "type": "string",
+  "title": "BoxHeightStyle",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "includeLineSpacingBottom",
+        "includeLineSpacingMiddle",
+        "includeLineSpacingTop",
+        "max",
+        "strut",
+        "tight"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}
