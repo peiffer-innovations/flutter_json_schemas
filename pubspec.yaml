@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   json_class: '^3.0.0'
-  yaon: '^1.1.0'
+  yaon: '^1.1.4'
 
 dev_dependencies:
   flutter_lints: '^2.0.1'
@@ -38,5 +38,6 @@ ignore_updates:
   - 'term_glyph'
   - 'test_api'
   - 'typed_data'
+  - 'uuid'
   - 'vector_math'
   - 'webdriver'

@@ -70,33 +70,29 @@ void main(List<String> args) {
         'https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_dynamic_widget/json_widget_data.json') {
       dataSchema = file;
     } else {
-      if (children == null) {
-        print('[OBJECT]: $type');
-      } else {
-        print('[WIDGET]: $type');
-        schemas[id] = schema;
-        oneOf.add(
-          {
-            'type': 'object',
-            'additionalProperties': false,
+      print('[WIDGET]: $type');
+      schemas[id] = schema;
+      oneOf.add(
+        {
+          'type': 'object',
+          'additionalProperties': false,
+          'properties': {
+            ...properties,
+            if (children == 1) 'child': child,
+            if (children == -1) 'children': children,
             'properties': {
-              ...properties,
-              if (children == 1) 'child': child,
-              if (children == -1) 'children': children,
-              'properties': {
-                'args': {
-                  r'$ref': id,
-                },
-                'type': {
-                  'type': 'string',
-                  'const': type.substring(0, type.indexOf('.')),
-                },
+              'args': {
+                r'$ref': id,
+              },
+              'type': {
+                'type': 'string',
+                'const': type.substring(0, type.indexOf('.')),
               },
             },
           },
-        );
-      }
-    }
+        },
+      );
+        }
   }
   oneOf.add({
     'type': 'object',
