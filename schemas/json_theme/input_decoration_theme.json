@@ -183,6 +183,16 @@
         }
       ]
     },
+    "hintFadeDuration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "hintStyle": {
       "anyOf": [
         {

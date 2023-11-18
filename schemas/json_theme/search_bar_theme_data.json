@@ -105,6 +105,9 @@
         }
       ]
     },
+    "textCapitalization": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_capitalization.json"
+    },
     "textStyle": {
       "anyOf": [
         {
