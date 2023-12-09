@@ -96,6 +96,48 @@
         }
       ]
     },
+    "textScaler": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "object",
+          "additionalProperties": true
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      ]
+    },
     "textWidthBasis": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_width_basis.json"
     }

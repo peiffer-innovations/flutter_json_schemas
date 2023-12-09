@@ -8,7 +8,7 @@
     "autovalidateMode": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/autovalidate_mode.json"
     },
-    "onChanged": {
+    "canPop": {
       "anyOf": [
         {
           "type": "string"
@@ -18,39 +18,10 @@
         },
         {
           "type": "boolean"
-        },
-        {
-          "type": "object",
-          "additionalProperties": true
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "number"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "boolean"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "additionalProperties": true
-          }
         }
       ]
     },
-    "onWillPop": {
+    "onChanged": {
       "anyOf": [
         {
           "type": "string"
