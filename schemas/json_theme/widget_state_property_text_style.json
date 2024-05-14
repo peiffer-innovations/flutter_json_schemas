@@ -1,8 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_text_style.json",
-  "$comment": "https://api.flutter.dev/flutter/material/MaterialStateProperty-class.html",
-  "title": "MaterialStatePropertyTextStyle",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_text_style.json",
+  "title": "WidgetStatePropertyTextStyle",
   "type": "object",
   "properties": {
     "disabled": {

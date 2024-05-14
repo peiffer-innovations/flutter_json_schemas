@@ -35,7 +35,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_icon_theme_data.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_icon_theme_data.json"
         }
       ]
     },
@@ -61,7 +61,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_text_style.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_text_style.json"
         }
       ]
     },

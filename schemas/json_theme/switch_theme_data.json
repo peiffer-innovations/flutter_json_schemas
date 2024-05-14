@@ -24,7 +24,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
         }
       ]
     },
@@ -44,7 +44,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
         }
       ]
     },
@@ -54,7 +54,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
         }
       ]
     },
@@ -64,7 +64,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_color.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
         }
       ]
     },

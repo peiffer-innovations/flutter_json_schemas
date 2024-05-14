@@ -1,8 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/material_state_property_double.json",
-  "$comment": "https://api.flutter.dev/flutter/material/MaterialStateProperty-class.html",
-  "title": "MaterialStatePropertyDouble",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_bool.json",
   "type": "object",
   "properties": {
     "disabled": {
@@ -12,6 +10,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -22,6 +23,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -32,6 +36,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -42,6 +49,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -52,6 +62,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -62,6 +75,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -72,6 +88,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -82,6 +101,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -92,6 +114,9 @@
         },
         {
           "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     }
