@@ -115,19 +115,6 @@
     "scrollbarOrientation": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/scrollbar_orientation.json"
     },
-    "showTrackOnHover": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
     "thickness": {
       "anyOf": [
         {

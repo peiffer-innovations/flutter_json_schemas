@@ -171,6 +171,16 @@
         }
       ]
     },
+    "minTileHeight": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "minVerticalPadding": {
       "anyOf": [
         {

@@ -5,19 +5,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "alignPanAxis": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "boolean"
-        }
-      ]
-    },
     "alignment": {
       "anyOf": [
         {
