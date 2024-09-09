@@ -10,8 +10,8 @@
       "enum": [
         "always",
         "disabled",
-        "onUserInteraction",
-        "onUnfocus"
+        "onUnfocus",
+        "onUserInteraction"
       ]
     },
     {
