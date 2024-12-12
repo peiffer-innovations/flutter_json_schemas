@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tab_indicator_animation.json",
+  "type": "string",
+  "title": "TabIndicatorAnimationSchema",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "elastic",
+        "linear"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

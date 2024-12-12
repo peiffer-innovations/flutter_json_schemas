@@ -1,20 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tab_bar_theme.json",
-  "$comment": "https://api.flutter.dev/flutter/material/TabBarTheme-class.html",
-  "title": "TabBarTheme",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tab_bar_theme_data.json",
+  "title": "TabBarThemeDataS",
   "type": "object",
   "properties": {
-    "data": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tab_bar_theme_data.json"
-        }
-      ]
-    },
     "dividerColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -25,6 +14,16 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "indicatorAnimation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tab_indicator_animation.json"
         }
       ]
     },

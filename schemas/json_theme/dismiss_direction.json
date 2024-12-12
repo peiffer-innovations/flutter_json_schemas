@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/dismiss_direction.json",
+  "type": "string",
+  "title": "DismissDirection",
+  "oneOf": [
+    {
+      "type": "string",
+      "enum": [
+        "down",
+        "endToStart",
+        "horizontal",
+        "none",
+        "startToEnd",
+        "up",
+        "vertical"
+      ]
+    },
+    {
+      "type": "string",
+      "pattern": "^\\{\\{.*\\}\\}$"
+    },
+    {
+      "type": "string",
+      "pattern": "##.*##$"
+    },
+    {
+      "type": "string",
+      "pattern": "\\$\\{.*\\}$"
+    }
+  ]
+}

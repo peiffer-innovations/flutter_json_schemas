@@ -1,8 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/dialog_theme.json",
-  "$comment": "https://api.flutter.dev/flutter/material/DialogTheme-class.html",
-  "title": "DialogTheme",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/dialog_theme_data.json",
+  "$comment": "https://api.flutter.dev/flutter/material/DialogThemeData-class.html",
+  "title": "DialogThemeData",
   "type": "object",
   "properties": {
     "actionsPadding": {
@@ -41,16 +41,6 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
-        }
-      ]
-    },
-    "data": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/dialog_theme_data.json"
         }
       ]
     },

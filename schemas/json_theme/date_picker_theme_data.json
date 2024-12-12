@@ -58,6 +58,16 @@
         }
       ]
     },
+    "dayShape": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_outlined_border.json"
+        }
+      ]
+    },
     "dayStyle": {
       "anyOf": [
         {
@@ -104,6 +114,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
+        }
+      ]
+    },
+    "locale": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/locale.json"
         }
       ]
     },

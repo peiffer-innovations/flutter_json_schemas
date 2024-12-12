@@ -46,6 +46,9 @@
     "disabledActionTextColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "dismissDirection": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/dismiss_direction.json"
+    },
     "elevation": {
       "anyOf": [
         {

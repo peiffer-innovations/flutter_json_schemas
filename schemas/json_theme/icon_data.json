@@ -22,6 +22,19 @@
     "fontFamily": {
       "type": "string"
     },
+    "fontFamilyFallback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
     "fontPackage": {
       "type": "string"
     },

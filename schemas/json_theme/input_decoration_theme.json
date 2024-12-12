@@ -245,6 +245,16 @@
     "prefixIconColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "prefixIconConstraints": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_constraints.json"
+        }
+      ]
+    },
     "prefixStyle": {
       "anyOf": [
         {
@@ -257,6 +267,16 @@
     },
     "suffixIconColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "suffixIconConstraints": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_constraints.json"
+        }
+      ]
     },
     "suffixStyle": {
       "anyOf": [

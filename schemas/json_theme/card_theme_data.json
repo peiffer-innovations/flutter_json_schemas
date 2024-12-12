@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/card_theme.json",
-  "$comment": "https://api.flutter.dev/flutter/material/CardTheme-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/card_theme_data.json",
+  "$comment": "https://api.flutter.dev/flutter/material/CardThemeData-class.html",
   "title": "CardTheme",
   "type": "object",
   "properties": {
@@ -10,16 +10,6 @@
     },
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "data": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/card_theme_data.json"
-        }
-      ]
     },
     "elevation": {
       "anyOf": [
