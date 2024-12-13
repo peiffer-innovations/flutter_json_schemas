@@ -14,6 +14,16 @@
     "mainAxisSize": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/main_axis_size.json"
     },
+    "spacing": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "textBaseline": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_baseline.json"
     },
