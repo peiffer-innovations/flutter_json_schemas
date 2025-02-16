@@ -17,8 +17,10 @@
         "phone",
         "streetAddress",
         "text",
+        "twitter",
         "url",
-        "visiblePassword"
+        "visiblePassword",
+        "webSearch"
       ]
     },
     {

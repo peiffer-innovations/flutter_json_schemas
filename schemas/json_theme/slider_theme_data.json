@@ -68,6 +68,16 @@
     "overlayShape": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/slider_component_shape.json"
     },
+    "padding": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+        }
+      ]
+    },
     "rangeThumbShape": {
       "anyOf": [
         {
@@ -105,6 +115,16 @@
     },
     "thumbShape": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/slider_component_shape.json"
+    },
+    "thumbSize": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_size.json"
+        }
+      ]
     },
     "trackHeight": {
       "anyOf": [
