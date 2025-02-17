@@ -37,6 +37,29 @@
     "semanticsValue": {
       "type": "string"
     },
+    "stopIndicatorColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "stopIndicatorRadius": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "trackGap": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "value": {
       "anyOf": [
         {
@@ -86,6 +109,19 @@
             "type": "object",
             "additionalProperties": true
           }
+        }
+      ]
+    },
+    "year2023": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     }
