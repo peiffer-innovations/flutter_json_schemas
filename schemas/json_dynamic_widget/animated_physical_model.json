@@ -199,5 +199,11 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "color",
+    "duration",
+    "shadowColor",
+    "child"
+  ]
 }

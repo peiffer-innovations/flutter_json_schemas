@@ -306,5 +306,9 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "onPressed",
+    "child"
+  ]
 }

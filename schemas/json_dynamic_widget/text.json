@@ -34,6 +34,9 @@
     "selectionColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "semanticsIdentifier": {
+      "type": "string"
+    },
     "semanticsLabel": {
       "type": "string"
     },
@@ -109,5 +112,8 @@
     "textWidthBasis": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_width_basis.json"
     }
-  }
+  },
+  "required": [
+    "text"
+  ]
 }

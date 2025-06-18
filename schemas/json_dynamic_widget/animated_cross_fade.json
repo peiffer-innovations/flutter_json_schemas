@@ -303,5 +303,11 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "crossFadeState",
+    "duration",
+    "firstChild",
+    "secondChild"
+  ]
 }

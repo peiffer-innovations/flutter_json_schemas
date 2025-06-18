@@ -5,6 +5,16 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "constraints": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_constraints.json"
+        }
+      ]
+    },
     "decoration": {
       "anyOf": [
         {
@@ -135,6 +145,19 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "ignorePointer": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
         }
       ]
     },
@@ -388,5 +411,6 @@
         }
       ]
     }
-  }
+  },
+  "required": []
 }

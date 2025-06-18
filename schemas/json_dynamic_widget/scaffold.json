@@ -281,5 +281,6 @@
     "restorationId": {
       "type": "string"
     }
-  }
+  },
+  "required": []
 }

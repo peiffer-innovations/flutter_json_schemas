@@ -193,5 +193,10 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "addAutomaticKeepAlives",
+    "addRepaintBoundaries",
+    "addSemanticIndexes"
+  ]
 }

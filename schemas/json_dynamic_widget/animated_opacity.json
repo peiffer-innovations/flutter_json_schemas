@@ -164,5 +164,9 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "duration",
+    "opacity"
+  ]
 }

@@ -193,5 +193,10 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "duration",
+    "style",
+    "child"
+  ]
 }

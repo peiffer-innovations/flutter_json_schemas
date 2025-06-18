@@ -267,5 +267,8 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "duration"
+  ]
 }

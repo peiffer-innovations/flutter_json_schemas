@@ -86,5 +86,9 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "childBuilder",
+    "keepScrollOffset"
+  ]
 }
