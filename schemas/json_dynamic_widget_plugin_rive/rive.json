@@ -140,5 +140,16 @@
     "url": {
       "type": "string"
     }
-  }
+  },
+  "required": [
+    "animations",
+    "antialiasing",
+    "artboard",
+    "asset",
+    "package",
+    "placeholder",
+    "rive",
+    "stateMachines",
+    "url"
+  ]
 }
