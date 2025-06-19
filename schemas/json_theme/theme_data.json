@@ -181,6 +181,16 @@
         }
       ]
     },
+    "datePickerThemeData": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/date_picker_theme_data.json"
+        }
+      ]
+    },
     "dataTableTheme": {
       "anyOf": [
         {
@@ -261,6 +271,16 @@
       ]
     },
     "expansionTileTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/expansion_tile_theme_data.json"
+        }
+      ]
+    },
+    "expansionTileThemeData": {
       "anyOf": [
         {
           "type": "string"
