@@ -192,5 +192,16 @@
         }
       ]
     }
-  }
+  },
+  "required": [
+    "asset",
+    "headers",
+    "height",
+    "image",
+    "matchTextDirection",
+    "package",
+    "semanticsLabel",
+    "url",
+    "width"
+  ]
 }
