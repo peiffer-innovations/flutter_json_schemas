@@ -1,9 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_bar_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/NavigationBarThemeData-class.html",
-  "title": "NavigationBarThemeData",
   "type": "object",
+  "title": "NavigationBarThemeData",
   "additionalProperties": false,
   "properties": {
     "backgroundColor": {

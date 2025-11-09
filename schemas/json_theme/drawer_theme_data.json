@@ -1,32 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/drawer_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/DrawerThemeData-class.html",
-  "title": "DrawerThemeData",
   "type": "object",
+  "title": "DrawerThemeData",
+  "additionalProperties": false,
   "properties": {
-    "alignment": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
-        }
-      ]
-    },
     "backgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
-    "contentTextStyle": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
-        }
-      ]
+    "clipBehavior": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/clip.json"
     },
     "elevation": {
       "anyOf": [
@@ -48,6 +31,9 @@
         }
       ]
     },
+    "scrimColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "shadowColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -63,16 +49,6 @@
     },
     "surfaceTintColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "titleTextStyle": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
-        }
-      ]
     },
     "width": {
       "anyOf": [

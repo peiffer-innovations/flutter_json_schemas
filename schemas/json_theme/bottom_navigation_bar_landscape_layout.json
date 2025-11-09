@@ -1,7 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_navigation_bar_landscape_layout.json",
-  "$comment": "https://api.flutter.dev/flutter/material/BottomNavigationBarLandscapeLayout-class.html",
   "type": "string",
   "title": "BottomNavigationBarLandscapeLayout",
   "oneOf": [

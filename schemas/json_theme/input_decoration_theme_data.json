@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/input_decoration_theme.json",
-  "$comment": "https://api.flutter.dev/flutter/material/InputDecorationTheme-class.html",
-  "title": "InputDecorationTheme",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/input_decoration_theme_data.json",
   "type": "object",
+  "title": "InputDecorationThemeData",
+  "additionalProperties": false,
   "properties": {
     "activeIndicatorBorder": {
       "anyOf": [
@@ -55,6 +55,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+        }
+      ]
+    },
+    "counterStyle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
     },
@@ -193,6 +203,16 @@
         }
       ]
     },
+    "hintMaxLines": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "hintStyle": {
       "anyOf": [
         {
@@ -208,6 +228,19 @@
     },
     "iconColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "isCollapsed": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
     },
     "isDense": {
       "anyOf": [
@@ -287,6 +320,9 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
+    },
+    "visualDensity": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/visual_density.json"
     }
   }
 }

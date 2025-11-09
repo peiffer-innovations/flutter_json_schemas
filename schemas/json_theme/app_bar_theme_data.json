@@ -1,9 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/app_bar_theme.json",
-  "$comment": "https://api.flutter.dev/flutter/material/AppBarTheme-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/app_bar_theme_data.json",
   "type": "object",
-  "title": "AppBarTheme",
+  "title": "AppBarThemeData",
   "additionalProperties": false,
   "properties": {
     "actionsIconTheme": {
@@ -42,9 +41,6 @@
         }
       ]
     },
-    "color": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
     "elevation": {
       "anyOf": [
         {
@@ -68,6 +64,16 @@
         }
       ]
     },
+    "leadingWidth": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
     "scrolledUnderElevation": {
       "anyOf": [
         {
@@ -81,8 +87,28 @@
     "shadowColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
+    "shape": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/shape_border.json"
+        }
+      ]
+    },
+    "surfaceTintColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "systemOverlayStyle": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/system_ui_overlay_style.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/system_ui_overlay_style.json"
+        }
+      ]
     },
     "titleSpacing": {
       "anyOf": [

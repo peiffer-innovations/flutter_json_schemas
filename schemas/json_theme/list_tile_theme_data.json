@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ListTileThemeData-class.html",
-  "title": "ListTileThemeData",
   "type": "object",
+  "title": "ListTileThemeData",
+  "additionalProperties": false,
   "properties": {
     "contentPadding": {
       "anyOf": [
@@ -16,14 +16,7 @@
       ]
     },
     "controlAffinity": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_control_affinity.json"
-        }
-      ]
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_control_affinity.json"
     },
     "dense": {
       "anyOf": [
@@ -63,6 +56,19 @@
     },
     "iconColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "isThreeLine": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
     },
     "leadingAndTrailingTextStyle": {
       "anyOf": [
@@ -130,6 +136,9 @@
         }
       ]
     },
+    "style": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_style.json"
+    },
     "subtitleTextStyle": {
       "anyOf": [
         {
@@ -139,9 +148,6 @@
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
-    },
-    "style": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_style.json"
     },
     "textColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"

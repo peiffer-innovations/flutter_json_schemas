@@ -1,9 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_navigation_bar_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/BottomNavigationBarThemeData-class.html",
   "type": "object",
-  "title": "BottomNavigationBarThemeDataSchema",
+  "title": "BottomNavigationBarThemeData",
   "additionalProperties": false,
   "properties": {
     "backgroundColor": {
@@ -18,6 +17,22 @@
           "type": "number"
         }
       ]
+    },
+    "enableFeedback": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "landscapeLayout": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_navigation_bar_landscape_layout.json"
     },
     "mouseCursor": {
       "anyOf": [

@@ -1,15 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json",
-  "$comment": "https://api.flutter.dev/flutter/painting/TextStyle-class.html",
-  "title": "TextStyle",
   "type": "object",
+  "title": "TextStyle",
+  "additionalProperties": false,
   "properties": {
+    "background": {
+      "type": "string"
+    },
     "backgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "color": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "debugLabel": {
+      "type": "string"
     },
     "decoration": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_decoration.json"
@@ -34,10 +40,17 @@
       "type": "string"
     },
     "fontFamilyFallback": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     },
     "fontFeatures": {
       "anyOf": [
@@ -65,8 +78,24 @@
     "fontStyle": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/font_style.json"
     },
+    "fontVariations": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/font_variation.json"
+          }
+        }
+      ]
+    },
     "fontWeight": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/font_weight.json"
+    },
+    "foreground": {
+      "type": "string"
     },
     "height": {
       "anyOf": [
@@ -94,7 +123,7 @@
     "leadingDistribution": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_leading_distribution.json"
     },
-    "letterSpacking": {
+    "letterSpacing": {
       "anyOf": [
         {
           "type": "string"

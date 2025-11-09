@@ -1,9 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_app_bar_theme.json",
-  "$comment": "https://api.flutter.dev/flutter/material/BottomAppBarTheme-class.html",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_app_bar_theme_data.json",
   "type": "object",
-  "title": "BottomAppBarTheme",
+  "title": "BottomAppBarThemeData",
   "additionalProperties": false,
   "properties": {
     "color": {
@@ -43,7 +42,14 @@
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "shape": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/notched_shape.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/notched_shape.json"
+        }
+      ]
     },
     "surfaceTintColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"

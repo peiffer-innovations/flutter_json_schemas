@@ -1,10 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tooltip_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/TooltipThemeData-class.html",
-  "title": "TooltipThemeData",
   "type": "object",
+  "title": "TooltipThemeData",
+  "additionalProperties": false,
   "properties": {
+    "constraints": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_constraints.json"
+        }
+      ]
+    },
+    "decoration": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/decoration.json"
+        }
+      ]
+    },
     "enableFeedback": {
       "anyOf": [
         {
@@ -32,16 +52,6 @@
       ]
     },
     "exitDuration": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
-        }
-      ]
-    },
-    "height": {
       "anyOf": [
         {
           "type": "string"
@@ -91,6 +101,19 @@
         },
         {
           "type": "number"
+        }
+      ]
+    },
+    "textAlign": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_align.json"
+    },
+    "textStyle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_style.json"
         }
       ]
     },

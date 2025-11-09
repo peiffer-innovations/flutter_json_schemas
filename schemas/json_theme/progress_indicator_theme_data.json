@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/progress_indicator_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ProgressIndicatorThemeData-class.html",
-  "title": "ProgressIndicatorThemeData",
   "type": "object",
+  "title": "ProgressIndicatorThemeData",
+  "additionalProperties": false,
   "properties": {
     "borderRadius": {
       "anyOf": [
@@ -11,7 +11,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius_geometry.json"
         }
       ]
     },
@@ -79,6 +79,9 @@
           "type": "number"
         }
       ]
+    },
+    "strokeCap": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/stroke_cap.json"
     },
     "strokeWidth": {
       "anyOf": [

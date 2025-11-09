@@ -1,9 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_input_type.json",
-  "$comment": "https://api.flutter.dev/flutter/services/TextInputType-class.html",
-  "title": "TextInputType",
   "type": "string",
+  "title": "TextInputType",
   "oneOf": [
     {
       "type": "string",

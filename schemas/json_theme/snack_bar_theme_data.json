@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/snack_bar_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/SnackBarThemeData-class.html",
-  "title": "SnackBarThemeData",
   "type": "object",
+  "title": "SnackBarThemeData",
+  "additionalProperties": false,
   "properties": {
     "actionBackgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -65,7 +65,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets_geometry.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets.json"
         }
       ]
     },

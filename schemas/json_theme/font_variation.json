@@ -1,14 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/font_variation.json",
-  "$comment": "https://api.flutter.dev/flutter/dart-ui/FontVariation-class.html",
   "type": "object",
   "title": "FontVariation",
   "additionalProperties": false,
-  "required": [
-    "axis",
-    "value"
-  ],
   "properties": {
     "axis": {
       "type": "string"

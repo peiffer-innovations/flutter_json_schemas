@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_height_behavior.json",
-  "$comment": "https://api.flutter.dev/flutter/dart-ui/TextHeightBehavior-class.html",
-  "title": "TextHeightBehavior",
   "type": "object",
+  "title": "TextHeightBehavior",
+  "additionalProperties": false,
   "properties": {
     "applyHeightToFirstAscent": {
       "anyOf": [

@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/typography.json",
-  "$comment": "https://api.flutter.dev/flutter/material/Typography-class.html",
-  "title": "Typography",
   "type": "object",
+  "title": "Typography",
+  "additionalProperties": false,
   "properties": {
     "black": {
       "anyOf": [
@@ -36,14 +36,7 @@
       ]
     },
     "platform": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_theme.json"
-        }
-      ]
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/target_platform.json"
     },
     "tall": {
       "anyOf": [

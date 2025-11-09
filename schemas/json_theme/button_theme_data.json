@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ButtonThemeData-class.html",
-  "title": "ButtonThemeData",
   "type": "object",
+  "title": "ButtonThemeData",
+  "additionalProperties": false,
   "properties": {
     "alignedDropdown": {
       "anyOf": [
@@ -47,6 +47,9 @@
         }
       ]
     },
+    "highlightColor": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
     "hoverColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
@@ -88,19 +91,6 @@
     },
     "splashColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "splashFactory": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json"
-    },
-    "surfaceTintColor": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
-        }
-      ]
     },
     "textTheme": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_text_theme.json"

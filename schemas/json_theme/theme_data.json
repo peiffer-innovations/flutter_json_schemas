@@ -1,18 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/theme_data.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ThemeData-class.html",
-  "title": "ThemeData",
   "type": "object",
+  "title": "ThemeData",
   "additionalProperties": false,
   "properties": {
+    "actionIconTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/action_icon_theme_data.json"
+        }
+      ]
+    },
+    "adaptations": {
+      "type": "string"
+    },
     "appBarTheme": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/app_bar_theme.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/app_bar_theme_data.json"
         }
       ]
     },
@@ -55,7 +67,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_app_bar_theme.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/bottom_app_bar_theme_data.json"
         }
       ]
     },
@@ -81,16 +93,6 @@
     },
     "brightness": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/brightness.json"
-    },
-    "buttonBarTheme": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_bar_theme_data.json"
-        }
-      ]
     },
     "buttonTheme": {
       "anyOf": [
@@ -118,13 +120,13 @@
         }
       ]
     },
-    "cardThemeData": {
+    "carouselViewTheme": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/card_theme_data.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/carousel_view_theme_data.json"
         }
       ]
     },
@@ -167,27 +169,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/cupertino_theme_data.json"
-        }
-      ]
-    },
-    "datePickerTheme": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/date_picker_theme_data.json"
-        }
-      ]
-    },
-    "datePickerThemeData": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/date_picker_theme_data.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/no_default_cupertino_theme_data.json"
         }
       ]
     },
@@ -201,20 +183,17 @@
         }
       ]
     },
-    "dialogBackgroundColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
-    "dialogTheme": {
+    "datePickerTheme": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/dialog_theme_data.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/date_picker_theme_data.json"
         }
       ]
     },
-    "dialogThemeData": {
+    "dialogTheme": {
       "anyOf": [
         {
           "type": "string"
@@ -280,15 +259,8 @@
         }
       ]
     },
-    "expansionTileThemeData": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/expansion_tile_theme_data.json"
-        }
-      ]
+    "extensions": {
+      "type": "string"
     },
     "filledButtonTheme": {
       "anyOf": [
@@ -317,10 +289,17 @@
       "type": "string"
     },
     "fontFamilyFallback": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     },
     "highlightColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -351,16 +330,13 @@
         }
       ]
     },
-    "indicatorColor": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-    },
     "inputDecorationTheme": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/input_decoration_theme.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/input_decoration_theme_data.json"
         }
       ]
     },
@@ -414,6 +390,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_bar_theme_data.json"
+        }
+      ]
+    },
+    "navigationDrawerTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/navigation_drawer_theme_data.json"
         }
       ]
     },
@@ -535,8 +521,38 @@
         }
       ]
     },
+    "searchBarTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/search_bar_theme_data.json"
+        }
+      ]
+    },
+    "searchViewTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/search_view_theme_data.json"
+        }
+      ]
+    },
     "secondaryHeaderColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
+    },
+    "segmentedButtonTheme": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/segmented_button_theme_data.json"
+        }
+      ]
     },
     "shadowColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
@@ -565,7 +581,14 @@
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "splashFactory": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json"
+        }
+      ]
     },
     "switchTheme": {
       "anyOf": [
@@ -578,16 +601,6 @@
       ]
     },
     "tabBarTheme": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/tab_bar_theme_data.json"
-        }
-      ]
-    },
-    "tabBarThemeData": {
       "anyOf": [
         {
           "type": "string"
@@ -671,6 +684,19 @@
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "useMaterial3": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "useSystemColors": {
       "anyOf": [
         {
           "type": "string"

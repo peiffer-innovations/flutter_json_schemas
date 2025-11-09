@@ -1,14 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/divider_theme_data.json",
+  "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/carousel_view_theme_data.json",
   "type": "object",
-  "title": "DividerThemeData",
+  "title": "CarouselViewThemeData",
   "additionalProperties": false,
   "properties": {
-    "color": {
+    "backgroundColor": {
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
-    "endIndent": {
+    "elevation": {
       "anyOf": [
         {
           "type": "string"
@@ -18,43 +18,33 @@
         }
       ]
     },
-    "indent": {
+    "overlayColor": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "type": "number"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
         }
       ]
     },
-    "radius": {
+    "padding": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius_geometry.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/edge_insets.json"
         }
       ]
     },
-    "space": {
+    "shape": {
       "anyOf": [
         {
           "type": "string"
         },
         {
-          "type": "number"
-        }
-      ]
-    },
-    "thickness": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "number"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/outlined_border.json"
         }
       ]
     }

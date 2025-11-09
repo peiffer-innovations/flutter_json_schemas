@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/button_style.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ButtonStyle-class.html",
+  "type": "object",
   "title": "ButtonStyle",
   "additionalProperties": false,
   "properties": {
@@ -11,7 +11,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment_geometry.json"
         }
       ]
     },
@@ -25,6 +25,9 @@
         }
       ]
     },
+    "backgroundBuilder": {
+      "type": "string"
+    },
     "backgroundColor": {
       "anyOf": [
         {
@@ -37,9 +40,6 @@
     },
     "elevation": {
       "anyOf": [
-        {
-          "type": "number"
-        },
         {
           "type": "string"
         },
@@ -71,6 +71,9 @@
         }
       ]
     },
+    "foregroundBuilder": {
+      "type": "string"
+    },
     "foregroundColor": {
       "anyOf": [
         {
@@ -96,9 +99,6 @@
     },
     "iconSize": {
       "anyOf": [
-        {
-          "type": "number"
-        },
         {
           "type": "string"
         },
@@ -184,6 +184,26 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_border_side.json"
+        }
+      ]
+    },
+    "splashFactory": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/interactive_ink_feature_factory.json"
+        }
+      ]
+    },
+    "surfaceTintColor": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/widget_state_property_color.json"
         }
       ]
     },

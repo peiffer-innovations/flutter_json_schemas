@@ -1,15 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/list_tile_style.json",
-  "$comment": "https://api.flutter.dev/flutter/material/ListTileStyle-class.html",
-  "title": "ListTileStyle",
   "type": "string",
+  "title": "ListTileStyle",
   "oneOf": [
     {
       "type": "string",
       "enum": [
-        "list",
-        "drawer"
+        "drawer",
+        "list"
       ]
     },
     {

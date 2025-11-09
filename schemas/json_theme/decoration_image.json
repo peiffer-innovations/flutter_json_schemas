@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/decoration_image.json",
-  "$comment": "https://api.flutter.dev/flutter/painting/DecorationImage-class.html",
-  "title": "DecorationImage",
   "type": "object",
+  "title": "DecorationImage",
+  "additionalProperties": false,
   "properties": {
     "alignment": {
       "anyOf": [
@@ -11,7 +11,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/alignment_geometry.json"
         }
       ]
     },
@@ -22,6 +22,16 @@
         },
         {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/rect.json"
+        }
+      ]
+    },
+    "colorFilter": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color_filter.json"
         }
       ]
     },
@@ -37,7 +47,7 @@
           "type": "string"
         },
         {
-          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/image_provider.json"
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/image_provider_object.json"
         }
       ]
     },
@@ -79,6 +89,9 @@
           "type": "boolean"
         }
       ]
+    },
+    "onError": {
+      "type": "string"
     },
     "opacity": {
       "anyOf": [

@@ -1,18 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/strut_style.json",
-  "$comment": "https://api.flutter.dev/flutter/painting/StrutStyle-class.html",
-  "title": "StrutStyle",
   "type": "object",
+  "title": "StrutStyle",
+  "additionalProperties": false,
   "properties": {
+    "debugLabel": {
+      "type": "string"
+    },
     "fontFamily": {
       "type": "string"
     },
     "fontFamilyFallback": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     },
     "fontSize": {
       "anyOf": [
@@ -62,6 +72,9 @@
           "type": "number"
         }
       ]
+    },
+    "leadingDistribution": {
+      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/text_leading_distribution.json"
     },
     "package": {
       "type": "string"
