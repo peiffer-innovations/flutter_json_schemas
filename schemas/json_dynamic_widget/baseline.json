@@ -28,9 +28,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "baseline",
-    "baselineType"
-  ]
+  }
 }

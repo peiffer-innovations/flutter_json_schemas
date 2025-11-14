@@ -453,8 +453,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "itemBuilder"
-  ]
+  }
 }

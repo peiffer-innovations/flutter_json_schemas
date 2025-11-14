@@ -225,10 +225,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "builder",
-    "duration",
-    "tween"
-  ]
+  }
 }

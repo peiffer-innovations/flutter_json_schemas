@@ -193,10 +193,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "duration",
-    "style",
-    "child"
-  ]
+  }
 }

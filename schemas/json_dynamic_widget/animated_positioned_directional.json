@@ -201,9 +201,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "duration",
-    "child"
-  ]
+  }
 }

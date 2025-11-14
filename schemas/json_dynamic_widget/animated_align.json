@@ -171,9 +171,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "alignment",
-    "duration"
-  ]
+  }
 }

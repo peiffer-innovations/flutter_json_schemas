@@ -18,9 +18,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "textDirection",
-    "child"
-  ]
+  }
 }

@@ -25,9 +25,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "data",
-    "child"
-  ]
+  }
 }

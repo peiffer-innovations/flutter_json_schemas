@@ -34,7 +34,6 @@
     "decoration": {
       "$schema": "http://json-schema.org/draft-07/schema#",
       "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_decoration.json",
-      "$comment": "https://api.flutter.dev/flutter/painting/BoxDecoration-class.html",
       "type": "object",
       "title": "BoxDecoration",
       "additionalProperties": false,
@@ -58,7 +57,7 @@
               "type": "string"
             },
             {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius.json"
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius_geometry.json"
             }
           ]
         },
@@ -77,16 +76,6 @@
         },
         "color": {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-        },
-        "decorationImage": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/decoration_image.json"
-            }
-          ]
         },
         "gradient": {
           "anyOf": [
@@ -116,7 +105,6 @@
     "foregroundDecoration": {
       "$schema": "http://json-schema.org/draft-07/schema#",
       "$id": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/box_decoration.json",
-      "$comment": "https://api.flutter.dev/flutter/painting/BoxDecoration-class.html",
       "type": "object",
       "title": "BoxDecoration",
       "additionalProperties": false,
@@ -140,7 +128,7 @@
               "type": "string"
             },
             {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius.json"
+              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/border_radius_geometry.json"
             }
           ]
         },
@@ -159,16 +147,6 @@
         },
         "color": {
           "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
-        },
-        "decorationImage": {
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/decoration_image.json"
-            }
-          ]
         },
         "gradient": {
           "anyOf": [
@@ -265,6 +243,5 @@
         }
       ]
     }
-  },
-  "required": []
+  }
 }

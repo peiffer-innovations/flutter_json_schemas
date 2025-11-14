@@ -47,8 +47,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "exception"
-  ]
+  }
 }

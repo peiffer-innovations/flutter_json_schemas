@@ -67,8 +67,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "conditional"
-  ]
+  }
 }

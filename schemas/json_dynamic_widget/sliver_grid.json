@@ -193,10 +193,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "addAutomaticKeepAlives",
-    "addRepaintBoundaries",
-    "addSemanticIndexes"
-  ]
+  }
 }

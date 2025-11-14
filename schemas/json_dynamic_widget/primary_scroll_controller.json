@@ -102,11 +102,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "automaticallyInheritForPlatforms",
-    "controller",
-    "scrollDirection",
-    "child"
-  ]
+  }
 }

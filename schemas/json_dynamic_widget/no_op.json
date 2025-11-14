@@ -4,6 +4,5 @@
   "title": "_NoOp",
   "type": "object",
   "additionalProperties": false,
-  "properties": {},
-  "required": []
+  "properties": {}
 }

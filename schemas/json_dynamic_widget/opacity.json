@@ -38,8 +38,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "opacity"
-  ]
+  }
 }

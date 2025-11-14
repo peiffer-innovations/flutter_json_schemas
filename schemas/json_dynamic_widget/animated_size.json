@@ -196,8 +196,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "duration"
-  ]
+  }
 }

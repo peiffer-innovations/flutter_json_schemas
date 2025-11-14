@@ -248,8 +248,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "onPressed"
-  ]
+  }
 }

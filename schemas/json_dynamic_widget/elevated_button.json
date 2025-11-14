@@ -293,9 +293,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "onPressed",
-    "child"
-  ]
+  }
 }

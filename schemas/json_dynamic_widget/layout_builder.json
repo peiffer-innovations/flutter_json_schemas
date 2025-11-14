@@ -57,8 +57,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "builder"
-  ]
+  }
 }

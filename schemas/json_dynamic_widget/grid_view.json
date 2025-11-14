@@ -309,9 +309,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "gridDelegate",
-    "primary"
-  ]
+  }
 }

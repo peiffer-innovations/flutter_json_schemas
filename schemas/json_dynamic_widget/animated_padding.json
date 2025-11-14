@@ -151,9 +151,5 @@
         }
       ]
     }
-  },
-  "required": [
-    "duration",
-    "padding"
-  ]
+  }
 }

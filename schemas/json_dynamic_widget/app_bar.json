@@ -38,6 +38,32 @@
         }
       ]
     },
+    "animateColor": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
+    "automaticallyImplyActions": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "boolean"
+        }
+      ]
+    },
     "automaticallyImplyLeading": {
       "anyOf": [
         {
@@ -251,7 +277,14 @@
       "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/color.json"
     },
     "systemOverlayStyle": {
-      "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/system_ui_overlay_style.json"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "https://peiffer-innovations.github.io/flutter_json_schemas/schemas/json_theme/system_ui_overlay_style.json"
+        }
+      ]
     },
     "title": {
       "anyOf": [
@@ -326,6 +359,5 @@
         }
       ]
     }
-  },
-  "required": []
+  }
 }
