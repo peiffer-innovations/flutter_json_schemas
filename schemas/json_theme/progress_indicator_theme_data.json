@@ -41,6 +41,9 @@
         }
       ]
     },
+    "controller": {
+      "type": "string"
+    },
     "linearMinHeight": {
       "anyOf": [
         {
